@@ -1,0 +1,111 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using KhaiBaoYTe.Models;
+using KhaiBaoYTe.ViewModel;
+
+namespace KhaiBaoYTe.Controllers
+{
+    public class ThongKeController : Controller
+    {
+        private KhaiBaoYTeEntities db = new KhaiBaoYTeEntities();
+        // GET: ThongKe
+        public ActionResult Index(TraLoiSearchModel searchModel)
+        {
+            ViewBag.IdChuDe = new SelectList(db.ChuDes, "IDChuDe", "TenChuDe");
+            ViewBag.IdTemplate = new SelectList(db.Templates, "IDTemplate", "TenTemplate");
+            var listCauHoi = db.CauHois.Select(x => x.TieuDe).Distinct();
+            ViewBag.IDCauHoi = new SelectList(listCauHoi);
+
+            TempData["SoLgChuDe"] = db.ChuDes.Count();
+            TempData["SoLgTemplate"] = db.Templates.Count();
+            TempData["SoLgCauHoi"] = db.CauHois.Select(x => x.TieuDe).Distinct().Count();
+            ThongKeVM thongKe = new ThongKeVM
+            {
+                traLoi = QueryListTraLoi(searchModel).ToList(),
+                radio = QueryTraLoiRadio().ToList()
+            };
+            return View(thongKe);
+        }
+
+        public JsonResult GetRadioData()
+        {
+            return Json(QueryTraLoiRadio(), JsonRequestBehavior.AllowGet);
+        }
+
+        private IQueryable<TraLoiVM> QueryListTraLoi (TraLoiSearchModel searchModel)
+        {
+            var listTraLoi = from ch in db.CauHois select ch;
+
+            if (searchModel != null)
+            {
+                if (!String.IsNullOrEmpty(searchModel.IdChuDe))
+                {
+                    int id = Int32.Parse(searchModel.IdChuDe);
+                    listTraLoi = listTraLoi.Where(x => x.Template.IDChuDe == id);
+                }
+                if (!String.IsNullOrEmpty(searchModel.IdTemplate))
+                {
+                    int id = Int32.Parse(searchModel.IdTemplate);
+                    listTraLoi = listTraLoi.Where(x => x.IDTemplate == id);
+                }
+                if (!String.IsNullOrEmpty(searchModel.IDCauHoi))
+                {
+                    listTraLoi = listTraLoi.Where(x => x.TieuDe == searchModel.IDCauHoi);
+                }
+            }
+            var result = from ls in listTraLoi
+                      join ct in db.CauTraLoi_ChiTiet on ls.IDCauHoi equals ct.IDCauHoi into gj
+                      from g in gj.DefaultIfEmpty()
+                      group g by ls.TieuDe into gr
+                      select new TraLoiVM()
+                      {
+                          TieuDe = gr.Key,
+                          SoLg = gr.Where(x => x.CauHoi.TieuDe == gr.Key).Select(x => x.IDCauTraLoiChiTiet).Count()
+                      };
+           
+            return result;
+        }
+
+        private  IQueryable<ThongKeTraLoiVM> QueryTraLoiRadio()
+        {
+            var nd = from ct in db.CauTraLoi_ChiTiet
+                     join s in db.Sub_CauHoi on ct.IDCauHoi equals s.IDCauHoi
+                     where ct.CauHoi.IDLoaiCauHoi != 1
+                     group ct by new { ct.IDCauHoi, s.NoiDung, ct.CauHoi.IDTemplate, ct.CauHoi.IDLoaiCauHoi } into gr
+                     select new NoiDungCauHoiVM()
+                     {
+                         idCauHoi = gr.Key.IDCauHoi.Value,
+                         idTemplate = gr.Key.IDTemplate.Value,
+                         idLoaiCauHoi = gr.Key.IDLoaiCauHoi.Value,
+                         noiDung = gr.Key.NoiDung,
+                         soLg = gr.Where(c => c.CauTraLoi.Contains(gr.Key.NoiDung)).Count()
+                     };
+            var result = from ch in db.CauHois
+                         join ct in db.CauTraLoi_ChiTiet on ch.IDCauHoi equals ct.IDCauHoi
+                         where ch.IDLoaiCauHoi != 1
+                         group ch by new { ch.IDCauHoi, ch.TieuDe, ch.IDTemplate, ch.IDLoaiCauHoi, ch.Template.TenTemplate } into gr
+                         select new ThongKeTraLoiVM()
+                         {
+                             idCauHoi = gr.Key.IDCauHoi,
+                             idLoaiCauHoi = gr.Key.IDLoaiCauHoi.Value,
+                             idTemplate = gr.Key.IDTemplate.Value,
+                             tenCauHoi = gr.Key.TieuDe,
+                             tenTemplate = gr.Key.TenTemplate,
+                             noiDung = nd.Where(x => x.idCauHoi == gr.Key.IDCauHoi && x.idTemplate == gr.Key.IDTemplate && x.idLoaiCauHoi == gr.Key.IDLoaiCauHoi).ToList()
+                         };
+            return result;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+    }
+}

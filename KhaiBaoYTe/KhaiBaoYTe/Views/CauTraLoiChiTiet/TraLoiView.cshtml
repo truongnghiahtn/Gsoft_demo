@@ -1,0 +1,43 @@
+﻿@model IEnumerable<KhaiBaoYTe.ViewModel.ChiTietTraLoiVM>
+@{
+    ViewBag.Title = "TraLoiView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Câu hỏi</h2>
+
+<p>
+    <h4>@TempData["TieuDe"]</h4>
+    Tổng số câu trả lời : @TempData["SoLgTraLoi"]
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tiêu đề
+            </th>
+            <th>
+                Câu trả lời
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @{ 
+            foreach(var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.TieuDe
+                    </td>
+                    <td>
+                        @item.CauTraLoi
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<div>
+    @Html.ActionLink("Back to Câu hỏi", "Index", "CauHoi", new { tableid = TempData["IdTemplate"] }, null)
+</div>

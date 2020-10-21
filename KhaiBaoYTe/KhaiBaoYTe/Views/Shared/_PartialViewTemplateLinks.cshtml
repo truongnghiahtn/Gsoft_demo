@@ -1,0 +1,15 @@
+﻿@model IEnumerable<KhaiBaoYTe.ViewModel.TemplateLinksVM>
+
+<ul class="nav nav-treeview">
+    @{
+        foreach (var item in Model)
+        {
+            <li class="nav-item">
+                <a href="@Url.Action("Index", "ThongKe", new { stringIdTemplate = item.idTemplate})" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>@item.tenTemplate</p>
+                </a>
+            </li>
+        }
+    }
+</ul>

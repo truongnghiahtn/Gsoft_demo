@@ -1,0 +1,80 @@
+﻿@model KhaiBaoYTe.Models.Template
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Template</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenTemplate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenTemplate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoTa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayTao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayTao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NguoiTao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NguoiTao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayUpdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayUpdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NguoiUpdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NguoiUpdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChuDe.TenChuDe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChuDe.TenChuDe)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

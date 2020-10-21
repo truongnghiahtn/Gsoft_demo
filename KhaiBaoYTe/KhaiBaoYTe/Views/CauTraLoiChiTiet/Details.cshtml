@@ -1,0 +1,40 @@
+﻿@model KhaiBaoYTe.Models.CauTraLoi_ChiTiet
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="text-center">
+    <h2>Details</h2>
+    <h4>CauTraLoi_ChiTiet</h4>
+</div>
+<hr/>
+<div class="row justify-content-md-around">
+    <div class="col-md-7">
+        <dl class="row">
+            <dt class="col-6">
+                User
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.CauTraLoi1.HoTen)
+            </dd>
+            <dt class="col-6">
+                Tiêu đề
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.CauHoi.TieuDe)
+            </dd>
+            <dt class="col-6">
+                Câu trả lời
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.CauTraLoi)
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="text-center mt-md-4">
+    <a href="@Url.Action("Index", "CauTraLoiChiTiet", new { stringId = Request.QueryString["stringId"] })" class="btn btn-default">
+        Back to Câu trả lời
+    </a>
+</div>

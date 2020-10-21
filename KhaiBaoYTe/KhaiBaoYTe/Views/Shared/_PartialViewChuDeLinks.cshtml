@@ -1,0 +1,15 @@
+﻿@model IEnumerable<KhaiBaoYTe.ViewModel.ChuDeLinksVM>
+
+<ul class="nav nav-treeview">
+    @{
+        foreach (var item in Model)
+        {
+            <li class="nav-item">
+                <a href="@Url.Action("Index", "ThongKe", new { stringIdChuDe = item.idChuDe})" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>@item.tenChuDe</p>
+                </a>
+            </li>
+        }
+    }
+</ul>

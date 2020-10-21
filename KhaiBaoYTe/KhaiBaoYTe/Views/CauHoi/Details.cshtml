@@ -1,0 +1,76 @@
+﻿@model KhaiBaoYTe.Models.CauHoi
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="text-center">
+    <h2>Details</h2>
+    <h4>CauHoi</h4>
+</div>
+<hr />
+<div class="row justify-content-md-around">
+    <div class="col-md-7">
+        <dl class="row">
+            <dt class="col-6">
+                Tên template
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.Template.TenTemplate)
+            </dd>
+            <dt class="col-6">
+                Tiêu đề
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.TieuDe)
+            </dd>
+            <dt class="col-6">
+                Bắt buộc
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.CauHoiRequired)
+            </dd>
+            <dt class="col-6">
+                Dạng câu hỏi
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.LoaiCauHoi.DangCauHoi)
+            </dd>
+            <dt class="col-6">
+                Ngày tạo
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.NgayTao)
+            </dd>
+            <dt class="col-6">
+                Người tạo
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.NguoiTao)
+            </dd>
+            <dt class="col-6">
+                Ngày update
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.NgayUpdate)
+            </dd>
+            <dt class="col-6">
+                Người update
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.NguoiUpdate)
+            </dd>
+            <dt class="col-6">
+                Số điểm
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.SoDiem)
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="text-center mt-md-4">
+    <a href="@Url.Action("Index", "CauHoi")" class="btn btn-default">
+        Back to Câu hỏi
+    </a>
+</div>

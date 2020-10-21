@@ -1,0 +1,67 @@
+﻿@model IEnumerable<KhaiBaoYTe.Models.ChuDe>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Chủ Đề</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>id chủ đề</th>
+        <th>
+            Tiêu Đề:
+        </th>
+        <th>
+            Mô Tả:
+        </th>
+        <th>
+            Ngày Tạo:
+        </th>
+        <th>
+            Người Tạo:
+        </th>
+        <th>
+            Ngày Update:
+        </th>
+        <th>
+            Người Update:
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@Html.DisplayFor(modelItem=>item.IDChuDe)</td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenChuDe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoTa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayTao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NguoiTao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayUpdate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NguoiUpdate)
+        </td>   
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { foreign_id = item.IDChuDe, id = item.IDChuDe }) |
+            @Html.ActionLink("Details", "Details", new { foreign_id = item.IDChuDe, id = item.IDChuDe }) |
+            @Html.ActionLink("Delete", "Delete", new { foreign_id=item.IDChuDe, id=item.IDChuDe }) |
+            @Html.ActionLink("Template", "Index", "Templates", new { foreign_id = item.IDChuDe}, null) |
+            
+        </td>
+    </tr>
+}
+
+</table>

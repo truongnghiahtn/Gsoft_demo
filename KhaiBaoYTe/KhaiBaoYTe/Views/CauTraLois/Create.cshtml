@@ -1,0 +1,119 @@
+﻿@model KhaiBaoYTe.Models.CauTraLoi
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>CauTraLoi</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.HoTen, "Họ tên", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.MSNV, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.MSNV, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MSNV, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.IDChuDe, "Tên chủ đề", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("IDChuDe", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IDChuDe, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+    <div class="form-group">
+        @Html.LabelFor(model => model.IDChuDe, "Tên chủ đề", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("IDChuDe", new SelectList(ViewBag.IDChuDe as System.Collections.IEnumerable, "IDChuDe", "TenChuDe"), "---Select chủ đề---", new { @class = "form-control", @id = "idChuDe" })
+            @Html.ValidationMessageFor(model => model.IDChuDe, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.IDTemplate, "Tên template", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("IDTemplate", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IDTemplate, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.IDTemplate, "Tên template", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("IDTemplate", new SelectList(Enumerable.Empty<SelectListItem>(), "IDTemplate", "TenTemplate"), "", htmlAttributes: new { @class = "form-control", @id = "idTemplate", @disabled = "disabled" })
+            @Html.ValidationMessageFor(model => model.IDTemplate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-outline-info" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    <a href="@Url.Action("Index", "CauTraLois")" class="btn btn-default">
+        Back to User
+    </a>
+</div>
+
+
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#idChuDe").change(function () {
+            var id = $(this).val();
+            if (id == 0) {
+                $("#idTemplate").prop("disabled", "disabled");
+                $("#idTemplate option").remove();
+            }
+            console.log("ID: ", id);
+            $.ajax({
+                url : "@Url.Action("GetTemplateInChuDe", "CauTraLois")",
+                type: 'GET',
+                data: { idChuDe: id}, // truyền giá trị của biến id qua cho jsonResult
+                success: function(data){
+                    console.log("data: ", data);
+                    $("#idTemplate").prop("disabled", "")
+                    $("#idTemplate").empty();// đã note ở create.cshtml CauHoi
+                    $.each(data, function (index, item) {
+                        $("#idTemplate").append($('<option/>', {
+                            value: item.Value,
+                            text: item.Text
+                        }))
+                    })
+                }
+            })
+        })
+    })
+</script>

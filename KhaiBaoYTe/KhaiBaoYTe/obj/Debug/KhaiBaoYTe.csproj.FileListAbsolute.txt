@@ -1,0 +1,763 @@
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\ApplicationInsights.config
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe.config
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.rsp
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe.config
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.rsp
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Win32.Primitives.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.AppContext.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Collections.Immutable.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Console.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.Process.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Compression.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Pipes.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.AccessControl.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Claims.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Principal.Windows.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Text.Encoding.CodePages.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Threading.Thread.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.ValueTuple.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.ReaderWriter.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XmlDocument.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.XDocument.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe.config
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.rsp
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe.config
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll.config
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.pdb
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.Web.Infrastructure.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\WebGrease.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.pdb
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.xml
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csprojResolveAssemblyReference.cache
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csproj.CoreCompileInputs.cache
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.dll
+c:\users\k.dan\source\repos\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.pdb
+C:\Users\K.DAN\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Cors.dll
+C:\Users\K.DAN\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.dll
+C:\Users\K.DAN\source\repos\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\ApplicationInsights.config
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe.config
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.rsp
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe.config
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.rsp
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.AppContext.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Collections.Immutable.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Console.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.Process.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Compression.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Pipes.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Reflection.Metadata.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.AccessControl.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Claims.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Threading.Thread.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.ValueTuple.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe.config
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.rsp
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe.config
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll.config
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.pdb
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.Web.Infrastructure.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Cors.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\WebGrease.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.pdb
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.xml
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csproj.CoreCompileInputs.cache
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.dll
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.pdb
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\ApplicationInsights.config
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe.config
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.rsp
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe.config
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.rsp
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.AppContext.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Collections.Immutable.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Console.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.Process.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Compression.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Pipes.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Reflection.Metadata.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.AccessControl.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Claims.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Principal.Windows.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Threading.Thread.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.ValueTuple.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XmlDocument.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe.config
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.rsp
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe.config
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll.config
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.pdb
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Agent.Intercept.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.Web.Infrastructure.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Cors.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\WebGrease.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.pdb
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.xml
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csprojAssemblyReference.cache
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csproj.CoreCompileInputs.cache
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csproj.CopyComplete
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.dll
+E:\gTTS_PDA2_2020\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.pdb
+D:\Gsoft BT\BaiTap3\BaoDNQ\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csprojResolveAssemblyReference.cache
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe.config
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.rsp
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe.config
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.rsp
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.AppContext.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Collections.Immutable.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Console.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.Process.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Compression.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Pipes.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Reflection.Metadata.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.AccessControl.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Claims.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Principal.Windows.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Threading.Thread.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.ValueTuple.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XmlDocument.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe.config
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.rsp
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe.config
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\ApplicationInsights.config
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll.config
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.pdb
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Agent.Intercept.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.Web.Infrastructure.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Cors.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\WebGrease.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.pdb
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.xml
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csprojAssemblyReference.cache
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csproj.CoreCompileInputs.cache
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csproj.CopyComplete
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.dll
+E:\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.pdb
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csprojResolveAssemblyReference.cache
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csproj.CoreCompileInputs.cache
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.pdb
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Collections.Immutable.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.IO.Compression.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Reflection.Metadata.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\ApplicationInsights.config
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\csc.exe
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\csc.exe.config
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\csc.rsp
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\csi.exe
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\csi.exe.config
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\csi.rsp
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.AppContext.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Console.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Diagnostics.Process.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.IO.Pipes.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Security.AccessControl.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Security.Claims.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Threading.Thread.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.ValueTuple.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\vbc.exe
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\vbc.exe.config
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\vbc.rsp
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe.config
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\KhaiBaoYTe.dll.config
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\KhaiBaoYTe.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\KhaiBaoYTe.pdb
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Antlr3.Runtime.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\EntityFramework.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\EntityFramework.SqlServer.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.AI.Web.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.Web.Infrastructure.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Newtonsoft.Json.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Net.Http.Formatting.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Cors.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Helpers.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Http.Cors.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Http.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Http.WebHost.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Mvc.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Optimization.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Razor.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.WebPages.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.WebPages.Razor.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\WebGrease.dll
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\EntityFramework.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\EntityFramework.SqlServer.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Net.Http.Formatting.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Http.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Http.Cors.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Helpers.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Mvc.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Optimization.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Razor.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.WebPages.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.WebPages.Razor.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Antlr3.Runtime.pdb
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Newtonsoft.Json.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\System.Web.Http.WebHost.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.xml
+D:\Quản lý câu hỏi_Khiết\KhaiBaoYTe\bin\Microsoft.AI.Web.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\ApplicationInsights.config
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe.config
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.rsp
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe.config
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.rsp
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.AppContext.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Console.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Compression.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Pipes.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Claims.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Threading.Thread.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.ValueTuple.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe.config
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.rsp
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll.config
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.pdb
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Cors.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\WebGrease.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.pdb
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csprojAssemblyReference.cache
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csproj.CoreCompileInputs.cache
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csproj.CopyComplete
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.pdb
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Buffers.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Memory.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Numerics.Vectors.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.pdb
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.PerfCounterCollector.pdb
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.PerfCounterCollector.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.pdb
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.pdb
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.pdb
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.pdb
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Buffers.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Memory.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Numerics.Vectors.xml
+C:\Users\DucDz\Desktop\gTTS_PDA2_2020\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\ApplicationInsights.config
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.exe.config
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csc.rsp
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.exe.config
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\csi.rsp
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.AppContext.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Console.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Compression.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.IO.Pipes.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Claims.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Threading.Thread.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.ValueTuple.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.exe.config
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\vbc.rsp
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll.config
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\KhaiBaoYTe.pdb
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Buffers.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Memory.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Numerics.Vectors.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Cors.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\WebGrease.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\EntityFramework.SqlServer.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.pdb
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.PerfCounterCollector.pdb
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.PerfCounterCollector.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.pdb
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.pdb
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.Web.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.pdb
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.pdb
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.ApplicationInsights.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Buffers.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Memory.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Net.Http.Formatting.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Numerics.Vectors.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.Cors.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Helpers.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Mvc.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Optimization.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Razor.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.WebPages.Razor.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Antlr3.Runtime.pdb
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\Newtonsoft.Json.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\bin\System.Web.Http.WebHost.xml
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csprojAssemblyReference.cache
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csproj.CoreCompileInputs.cache
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.csproj.CopyComplete
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.dll
+C:\Users\congd\OneDrive\Máy tính\Gso\BaiTap3\KhietPT\KhaiBaoYTe\KhaiBaoYTe\obj\Debug\KhaiBaoYTe.pdb

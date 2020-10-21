@@ -1,0 +1,105 @@
+﻿@model IEnumerable<KhaiBaoYTe.Models.CauHoi>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Câu Hỏi</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { foreign_id = ViewContext.RouteData.Values["foreign_id"] }, null)
+</p>
+<table class="table">
+    <tr>
+        <th>id câu hỏi</th>
+        <th>
+            Tiêu Đề:
+        </th>
+        <th>
+            Required:
+        </th>
+        <th>
+            Ngày Tạo:
+        </th>
+        <th>
+            Người Tạo:
+        </th>
+        <th>
+            Ngày Update:
+        </th>
+        <th>
+            Người Update:
+        </th>
+        <th>
+            Dạng Câu Hỏi:
+        </th>
+        <th>
+            Template:
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem=>item.IDCauHoi)</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TieuDe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CauHoiRequired)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayTao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NguoiTao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayUpdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NguoiUpdate)
+            </td>
+            <td class="form-group">
+                @Html.DisplayFor(modelItem => item.LoaiCauHoi.DangCauHoi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Template.TenTemplate)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { foreign_id = item.IDCauHoi, id = item.IDCauHoi }) |
+                @Html.ActionLink("Details", "Details", new { foreign_id = item.IDCauHoi, id = item.IDCauHoi }) |
+                @Html.ActionLink("Delete", "Delete", new { foreign_id = item.IDCauHoi, id = item.IDCauHoi }) |
+                @Html.ActionLink("Sub Câu Hỏi", "Index", "Sub_CauHoi", new { foreign_id = item.IDCauHoi}, null) |
+                @Html.ActionLink("Câu Trả Lời", "Index", "CauTraLois", new { foreign_id = item.Template.IDChuDe, id = item.IDTemplate }, null)
+            </td>
+        </tr>
+    }
+
+</table>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
+<script type="text/javascript">
+    $("select.option_LoaiCauHoi").change(function () {
+        var selected = $(this).children("option:selected").val();
+        console.log('Value: ' + selected + ';idCauHoi: ' + this.id);
+
+        ajax({
+            type: "POST",
+            url: "/CauHois/Edit/",
+            data: {
+                ID: this.id,
+                SEL: selected
+            },
+            success: function () {
+                console.log('ok');
+            }
+
+
+        })
+
+    });
+</script>
+
+

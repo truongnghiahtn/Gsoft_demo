@@ -1,0 +1,132 @@
+﻿@model KhaiBaoYTe.Models.CauHoi
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+    <h4>CauHoi</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Chủ đề</label>
+            <div class="col-md-10">
+                @Html.DropDownList("IDChuDe", new SelectList(ViewBag.ChuDe , "IDChuDe", "TenChuDe"), "---Select chủ đề---", new { @class = "form-control", @id = "idChuDe" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IDTemplate, "Tên template", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("IDTemplate", new SelectList(Enumerable.Empty<SelectListItem>(), "IDTemplate", "TenTemplate"), "", htmlAttributes: new { @class = "form-control", @id = "idTemplate", @disabled = "disabled" })
+                @Html.ValidationMessageFor(model => model.IDTemplate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TieuDe, "Tiêu đề", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TieuDe, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TieuDe, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IDLoaiCauHoi, "Loại câu hỏi", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("IDLoaiCauHoi", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IDLoaiCauHoi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CauHoiRequired, "Bắt buộc", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.CauHoiRequired)
+                    @Html.ValidationMessageFor(model => model.CauHoiRequired, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NguoiTao, "Người tạo", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NguoiTao, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NguoiTao, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SoDiem, "Số điểm", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SoDiem, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SoDiem, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.CauHoiEnable, "Enable", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CauHoiEnable, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CauHoiEnable, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-outline-info" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    <a href="@Url.Action("Index", "CauHoi")" class="btn btn-default">
+        Back to Câu hỏi
+    </a>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#idChuDe").change(function () {
+            var id = $(this).val();
+            if (id == 0) {
+                $("#idTemplate").prop("disabled", "disabled");
+                $("#idTemplate option").remove();//bỏ đi thông tiên ở ô tên template nếu đã chọn nhưng sau đó không chọn chủ đề nữa
+            }
+            console.log(id);
+            $.ajax({
+                url : "@Url.Action("GetTemplateInChuDe", "CauHoi")",
+                type: 'GET',
+                data: { idChuDe: id},
+                success: function(data){
+                    console.log(data);
+                    $("#idTemplate").prop("disabled", "")//sửa disable thành không
+                    $("#idTemplate").empty();//xóa lựa chọn cũ trong tên template nếu thay đổi chủ đề
+                    $.each(data, function (index, item) {
+                        $("#idTemplate").append($('<option/>', {
+                            value: item.Value, // lấy giá trị từ hàm "GetTemplateInChuDe"
+                            text: item.Text
+                        }))
+                    })
+                }
+            })
+        })
+    })
+</script>
+

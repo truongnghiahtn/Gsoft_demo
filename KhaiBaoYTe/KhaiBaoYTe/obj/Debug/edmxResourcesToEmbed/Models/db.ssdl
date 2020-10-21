@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KhaiBaoYTeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CauHoi">
+    <Key>
+      <PropertyRef Name="IDCauHoi" />
+    </Key>
+    <Property Name="IDCauHoi" Type="int" Nullable="false" />
+    <Property Name="IDTemplate" Type="int" />
+    <Property Name="TieuDe" Type="nvarchar(max)" />
+    <Property Name="IDLoaiCauHoi" Type="int" />
+    <Property Name="CauHoiRequired" Type="bit" Nullable="false" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayUpdate" Type="datetime" />
+    <Property Name="NguoiUpdate" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoDiem" Type="int" />
+    <Property Name="CauHoiEnable" Type="bit" />
+  </EntityType>
+  <EntityType Name="CauTraLoi">
+    <Key>
+      <PropertyRef Name="IDCauTraLoi" />
+    </Key>
+    <Property Name="IDCauTraLoi" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="MSNV" Type="varchar" MaxLength="10" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="IDChuDe" Type="int" />
+    <Property Name="IDTemplate" Type="int" />
+  </EntityType>
+  <EntityType Name="CauTraLoi_ChiTiet">
+    <Key>
+      <PropertyRef Name="IDCauTraLoiChiTiet" />
+    </Key>
+    <Property Name="IDCauTraLoiChiTiet" Type="int" Nullable="false" />
+    <Property Name="IDCauTraLoi" Type="int" />
+    <Property Name="IDCauHoi" Type="int" />
+    <Property Name="CauTraLoi" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'KhaiBaoYTe.dbo.CauTraLoiDung' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CauTraLoiDung">
+    <Key>
+      <PropertyRef Name="ID_CTL_Dung" />
+    </Key>
+    <Property Name="IDCauHoi" Type="int" />
+    <Property Name="CauTraLoi_Dung" Type="nvarchar(max)" />
+    <Property Name="ID_CTL_Dung" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChuDe">
+    <Key>
+      <PropertyRef Name="IDChuDe" />
+    </Key>
+    <Property Name="IDChuDe" Type="int" Nullable="false" />
+    <Property Name="TenChuDe" Type="nvarchar" MaxLength="50" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="100" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayUpdate" Type="datetime" />
+    <Property Name="NguoiUpdate" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LoaiCauHoi">
+    <Key>
+      <PropertyRef Name="IDLoaiCauHoi" />
+    </Key>
+    <Property Name="IDLoaiCauHoi" Type="int" Nullable="false" />
+    <Property Name="DangCauHoi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sub_CauHoi">
+    <Key>
+      <PropertyRef Name="IDSubCauHoi" />
+    </Key>
+    <Property Name="IDSubCauHoi" Type="int" Nullable="false" />
+    <Property Name="IDCauHoi" Type="int" />
+    <Property Name="NoiDung" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Template">
+    <Key>
+      <PropertyRef Name="IDTemplate" />
+    </Key>
+    <Property Name="IDTemplate" Type="int" Nullable="false" />
+    <Property Name="IDChuDe" Type="int" />
+    <Property Name="TenTemplate" Type="nvarchar" MaxLength="50" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="100" />
+    <Property Name="NgayTao" Type="datetime" />
+    <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayUpdate" Type="datetime" />
+    <Property Name="NguoiUpdate" Type="nvarchar" MaxLength="50" />
+    <Property Name="HienThi" Type="int" />
+    <Property Name="TinhDiem" Type="bit" />
+    <Property Name="Random" Type="bit" />
+  </EntityType>
+  <Association Name="fk_CauHoi_LoaiCauHoi">
+    <End Role="LoaiCauHoi" Type="Self.LoaiCauHoi" Multiplicity="0..1" />
+    <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiCauHoi">
+        <PropertyRef Name="IDLoaiCauHoi" />
+      </Principal>
+      <Dependent Role="CauHoi">
+        <PropertyRef Name="IDLoaiCauHoi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CauHoi_Template">
+    <End Role="Template" Type="Self.Template" Multiplicity="0..1" />
+    <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Template">
+        <PropertyRef Name="IDTemplate" />
+      </Principal>
+      <Dependent Role="CauHoi">
+        <PropertyRef Name="IDTemplate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CauTraLoi_ChiTiet_CauHoi">
+    <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="0..1" />
+    <End Role="CauTraLoi_ChiTiet" Type="Self.CauTraLoi_ChiTiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CauHoi">
+        <PropertyRef Name="IDCauHoi" />
+      </Principal>
+      <Dependent Role="CauTraLoi_ChiTiet">
+        <PropertyRef Name="IDCauHoi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CauTraLoi_ChiTiet_CauTraLoi">
+    <End Role="CauTraLoi" Type="Self.CauTraLoi" Multiplicity="0..1" />
+    <End Role="CauTraLoi_ChiTiet" Type="Self.CauTraLoi_ChiTiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CauTraLoi">
+        <PropertyRef Name="IDCauTraLoi" />
+      </Principal>
+      <Dependent Role="CauTraLoi_ChiTiet">
+        <PropertyRef Name="IDCauTraLoi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CauTraLoi_ChuDe">
+    <End Role="ChuDe" Type="Self.ChuDe" Multiplicity="0..1" />
+    <End Role="CauTraLoi" Type="Self.CauTraLoi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChuDe">
+        <PropertyRef Name="IDChuDe" />
+      </Principal>
+      <Dependent Role="CauTraLoi">
+        <PropertyRef Name="IDChuDe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CauTraLoi_Template">
+    <End Role="Template" Type="Self.Template" Multiplicity="0..1" />
+    <End Role="CauTraLoi" Type="Self.CauTraLoi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Template">
+        <PropertyRef Name="IDTemplate" />
+      </Principal>
+      <Dependent Role="CauTraLoi">
+        <PropertyRef Name="IDTemplate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Sub_CauHoi_CauHoi">
+    <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="0..1" />
+    <End Role="Sub_CauHoi" Type="Self.Sub_CauHoi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CauHoi">
+        <PropertyRef Name="IDCauHoi" />
+      </Principal>
+      <Dependent Role="Sub_CauHoi">
+        <PropertyRef Name="IDCauHoi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Template_ChuDe">
+    <End Role="ChuDe" Type="Self.ChuDe" Multiplicity="0..1" />
+    <End Role="Template" Type="Self.Template" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChuDe">
+        <PropertyRef Name="IDChuDe" />
+      </Principal>
+      <Dependent Role="Template">
+        <PropertyRef Name="IDChuDe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KhaiBaoYTeModelStoreContainer">
+    <EntitySet Name="CauHoi" EntityType="Self.CauHoi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CauTraLoi" EntityType="Self.CauTraLoi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CauTraLoi_ChiTiet" EntityType="Self.CauTraLoi_ChiTiet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChuDe" EntityType="Self.ChuDe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoaiCauHoi" EntityType="Self.LoaiCauHoi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sub_CauHoi" EntityType="Self.Sub_CauHoi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Template" EntityType="Self.Template" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CauTraLoiDung" EntityType="Self.CauTraLoiDung" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CauTraLoiDung].[IDCauHoi] AS [IDCauHoi], 
+    [CauTraLoiDung].[CauTraLoi_Dung] AS [CauTraLoi_Dung], 
+    [CauTraLoiDung].[ID_CTL_Dung] AS [ID_CTL_Dung]
+    FROM [dbo].[CauTraLoiDung] AS [CauTraLoiDung]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="fk_CauHoi_LoaiCauHoi" Association="Self.fk_CauHoi_LoaiCauHoi">
+      <End Role="LoaiCauHoi" EntitySet="LoaiCauHoi" />
+      <End Role="CauHoi" EntitySet="CauHoi" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CauHoi_Template" Association="Self.fk_CauHoi_Template">
+      <End Role="Template" EntitySet="Template" />
+      <End Role="CauHoi" EntitySet="CauHoi" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CauTraLoi_ChiTiet_CauHoi" Association="Self.fk_CauTraLoi_ChiTiet_CauHoi">
+      <End Role="CauHoi" EntitySet="CauHoi" />
+      <End Role="CauTraLoi_ChiTiet" EntitySet="CauTraLoi_ChiTiet" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CauTraLoi_ChiTiet_CauTraLoi" Association="Self.fk_CauTraLoi_ChiTiet_CauTraLoi">
+      <End Role="CauTraLoi" EntitySet="CauTraLoi" />
+      <End Role="CauTraLoi_ChiTiet" EntitySet="CauTraLoi_ChiTiet" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CauTraLoi_ChuDe" Association="Self.fk_CauTraLoi_ChuDe">
+      <End Role="ChuDe" EntitySet="ChuDe" />
+      <End Role="CauTraLoi" EntitySet="CauTraLoi" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CauTraLoi_Template" Association="Self.fk_CauTraLoi_Template">
+      <End Role="Template" EntitySet="Template" />
+      <End Role="CauTraLoi" EntitySet="CauTraLoi" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Sub_CauHoi_CauHoi" Association="Self.fk_Sub_CauHoi_CauHoi">
+      <End Role="CauHoi" EntitySet="CauHoi" />
+      <End Role="Sub_CauHoi" EntitySet="Sub_CauHoi" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Template_ChuDe" Association="Self.fk_Template_ChuDe">
+      <End Role="ChuDe" EntitySet="ChuDe" />
+      <End Role="Template" EntitySet="Template" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

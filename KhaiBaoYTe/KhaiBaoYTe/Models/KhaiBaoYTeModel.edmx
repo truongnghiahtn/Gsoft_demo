@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="KhaiBaoYTeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CauHoi">
+          <Key>
+            <PropertyRef Name="IDCauHoi" />
+          </Key>
+          <Property Name="IDCauHoi" Type="int" Nullable="false" />
+          <Property Name="IDTemplate" Type="int" />
+          <Property Name="TieuDe" Type="nvarchar(max)" />
+          <Property Name="IDLoaiCauHoi" Type="int" />
+          <Property Name="CauHoiRequired" Type="bit" Nullable="false" />
+          <Property Name="NgayTao" Type="datetime" />
+          <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayUpdate" Type="datetime" />
+          <Property Name="NguoiUpdate" Type="nvarchar" MaxLength="50" />
+          <Property Name="SoDiem" Type="int" />
+          <Property Name="CauHoiEnable" Type="bit" />
+        </EntityType>
+        <EntityType Name="CauTraLoi">
+          <Key>
+            <PropertyRef Name="IDCauTraLoi" />
+          </Key>
+          <Property Name="IDCauTraLoi" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+          <Property Name="MSNV" Type="varchar" MaxLength="10" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="IDChuDe" Type="int" />
+          <Property Name="IDTemplate" Type="int" />
+        </EntityType>
+        <EntityType Name="CauTraLoi_ChiTiet">
+          <Key>
+            <PropertyRef Name="IDCauTraLoiChiTiet" />
+          </Key>
+          <Property Name="IDCauTraLoiChiTiet" Type="int" Nullable="false" />
+          <Property Name="IDCauTraLoi" Type="int" />
+          <Property Name="IDCauHoi" Type="int" />
+          <Property Name="CauTraLoi" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="CauTraLoiDung">
+          <Key>
+            <PropertyRef Name="ID_CTL_Dung" />
+          </Key>
+          <Property Name="ID_CTL_Dung" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDCauHoi" Type="int" />
+          <Property Name="CauTraLoi_Dung" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ChuDe">
+          <Key>
+            <PropertyRef Name="IDChuDe" />
+          </Key>
+          <Property Name="IDChuDe" Type="int" Nullable="false" />
+          <Property Name="TenChuDe" Type="nvarchar" MaxLength="50" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="100" />
+          <Property Name="NgayTao" Type="datetime" />
+          <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayUpdate" Type="datetime" />
+          <Property Name="NguoiUpdate" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="LoaiCauHoi">
+          <Key>
+            <PropertyRef Name="IDLoaiCauHoi" />
+          </Key>
+          <Property Name="IDLoaiCauHoi" Type="int" Nullable="false" />
+          <Property Name="DangCauHoi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Sub_CauHoi">
+          <Key>
+            <PropertyRef Name="IDSubCauHoi" />
+          </Key>
+          <Property Name="IDSubCauHoi" Type="int" Nullable="false" />
+          <Property Name="IDCauHoi" Type="int" />
+          <Property Name="NoiDung" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Template">
+          <Key>
+            <PropertyRef Name="IDTemplate" />
+          </Key>
+          <Property Name="IDTemplate" Type="int" Nullable="false" />
+          <Property Name="IDChuDe" Type="int" />
+          <Property Name="TenTemplate" Type="nvarchar" MaxLength="50" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="100" />
+          <Property Name="NgayTao" Type="datetime" />
+          <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayUpdate" Type="datetime" />
+          <Property Name="NguoiUpdate" Type="nvarchar" MaxLength="50" />
+          <Property Name="HienThi" Type="int" />
+          <Property Name="TinhDiem" Type="bit" />
+          <Property Name="Random" Type="bit" />
+          <Property Name="CauHoiEnable" Type="bit" />
+        </EntityType>
+        <Association Name="fk_CauHoi_LoaiCauHoi">
+          <End Role="LoaiCauHoi" Type="Self.LoaiCauHoi" Multiplicity="0..1" />
+          <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LoaiCauHoi">
+              <PropertyRef Name="IDLoaiCauHoi" />
+            </Principal>
+            <Dependent Role="CauHoi">
+              <PropertyRef Name="IDLoaiCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CauHoi_Template">
+          <End Role="Template" Type="Self.Template" Multiplicity="0..1" />
+          <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Template">
+              <PropertyRef Name="IDTemplate" />
+            </Principal>
+            <Dependent Role="CauHoi">
+              <PropertyRef Name="IDTemplate" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CauTraLoi_ChiTiet_CauHoi">
+          <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="0..1" />
+          <End Role="CauTraLoi_ChiTiet" Type="Self.CauTraLoi_ChiTiet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CauHoi">
+              <PropertyRef Name="IDCauHoi" />
+            </Principal>
+            <Dependent Role="CauTraLoi_ChiTiet">
+              <PropertyRef Name="IDCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CauTraLoi_ChiTiet_CauTraLoi">
+          <End Role="CauTraLoi" Type="Self.CauTraLoi" Multiplicity="0..1" />
+          <End Role="CauTraLoi_ChiTiet" Type="Self.CauTraLoi_ChiTiet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CauTraLoi">
+              <PropertyRef Name="IDCauTraLoi" />
+            </Principal>
+            <Dependent Role="CauTraLoi_ChiTiet">
+              <PropertyRef Name="IDCauTraLoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CauTraLoi_ChuDe">
+          <End Role="ChuDe" Type="Self.ChuDe" Multiplicity="0..1" />
+          <End Role="CauTraLoi" Type="Self.CauTraLoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ChuDe">
+              <PropertyRef Name="IDChuDe" />
+            </Principal>
+            <Dependent Role="CauTraLoi">
+              <PropertyRef Name="IDChuDe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CauTraLoi_Template">
+          <End Role="Template" Type="Self.Template" Multiplicity="0..1" />
+          <End Role="CauTraLoi" Type="Self.CauTraLoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Template">
+              <PropertyRef Name="IDTemplate" />
+            </Principal>
+            <Dependent Role="CauTraLoi">
+              <PropertyRef Name="IDTemplate" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Sub_CauHoi_CauHoi">
+          <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="0..1" />
+          <End Role="Sub_CauHoi" Type="Self.Sub_CauHoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CauHoi">
+              <PropertyRef Name="IDCauHoi" />
+            </Principal>
+            <Dependent Role="Sub_CauHoi">
+              <PropertyRef Name="IDCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Template_ChuDe">
+          <End Role="ChuDe" Type="Self.ChuDe" Multiplicity="0..1" />
+          <End Role="Template" Type="Self.Template" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ChuDe">
+              <PropertyRef Name="IDChuDe" />
+            </Principal>
+            <Dependent Role="Template">
+              <PropertyRef Name="IDChuDe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="KhaiBaoYTeModelStoreContainer">
+          <EntitySet Name="CauHoi" EntityType="Self.CauHoi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CauTraLoi" EntityType="Self.CauTraLoi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CauTraLoi_ChiTiet" EntityType="Self.CauTraLoi_ChiTiet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CauTraLoiDung" EntityType="Self.CauTraLoiDung" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ChuDe" EntityType="Self.ChuDe" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LoaiCauHoi" EntityType="Self.LoaiCauHoi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sub_CauHoi" EntityType="Self.Sub_CauHoi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Template" EntityType="Self.Template" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="fk_CauHoi_LoaiCauHoi" Association="Self.fk_CauHoi_LoaiCauHoi">
+            <End Role="LoaiCauHoi" EntitySet="LoaiCauHoi" />
+            <End Role="CauHoi" EntitySet="CauHoi" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CauHoi_Template" Association="Self.fk_CauHoi_Template">
+            <End Role="Template" EntitySet="Template" />
+            <End Role="CauHoi" EntitySet="CauHoi" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CauTraLoi_ChiTiet_CauHoi" Association="Self.fk_CauTraLoi_ChiTiet_CauHoi">
+            <End Role="CauHoi" EntitySet="CauHoi" />
+            <End Role="CauTraLoi_ChiTiet" EntitySet="CauTraLoi_ChiTiet" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CauTraLoi_ChiTiet_CauTraLoi" Association="Self.fk_CauTraLoi_ChiTiet_CauTraLoi">
+            <End Role="CauTraLoi" EntitySet="CauTraLoi" />
+            <End Role="CauTraLoi_ChiTiet" EntitySet="CauTraLoi_ChiTiet" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CauTraLoi_ChuDe" Association="Self.fk_CauTraLoi_ChuDe">
+            <End Role="ChuDe" EntitySet="ChuDe" />
+            <End Role="CauTraLoi" EntitySet="CauTraLoi" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CauTraLoi_Template" Association="Self.fk_CauTraLoi_Template">
+            <End Role="Template" EntitySet="Template" />
+            <End Role="CauTraLoi" EntitySet="CauTraLoi" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Sub_CauHoi_CauHoi" Association="Self.fk_Sub_CauHoi_CauHoi">
+            <End Role="CauHoi" EntitySet="CauHoi" />
+            <End Role="Sub_CauHoi" EntitySet="Sub_CauHoi" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Template_ChuDe" Association="Self.fk_Template_ChuDe">
+            <End Role="ChuDe" EntitySet="ChuDe" />
+            <End Role="Template" EntitySet="Template" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KhaiBaoYTeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CauHoi">
+          <Key>
+            <PropertyRef Name="IDCauHoi" />
+          </Key>
+          <Property Name="IDCauHoi" Type="Int32" Nullable="false" />
+          <Property Name="IDTemplate" Type="Int32" />
+          <Property Name="TieuDe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDLoaiCauHoi" Type="Int32" />
+          <Property Name="CauHoiRequired" Type="Boolean" Nullable="false" />
+          <Property Name="NgayTao" Type="DateTime" Precision="3" />
+          <Property Name="NguoiTao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgayUpdate" Type="DateTime" Precision="3" />
+          <Property Name="NguoiUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="LoaiCauHoi" Relationship="Self.fk_CauHoi_LoaiCauHoi" FromRole="CauHoi" ToRole="LoaiCauHoi" />
+          <NavigationProperty Name="Template" Relationship="Self.fk_CauHoi_Template" FromRole="CauHoi" ToRole="Template" />
+          <NavigationProperty Name="CauTraLoi_ChiTiet" Relationship="Self.fk_CauTraLoi_ChiTiet_CauHoi" FromRole="CauHoi" ToRole="CauTraLoi_ChiTiet" />
+          <NavigationProperty Name="Sub_CauHoi" Relationship="Self.fk_Sub_CauHoi_CauHoi" FromRole="CauHoi" ToRole="Sub_CauHoi" />
+          <Property Name="SoDiem" Type="Int32" />
+          <Property Name="CauHoiEnable" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="CauTraLoi">
+          <Key>
+            <PropertyRef Name="IDCauTraLoi" />
+          </Key>
+          <Property Name="IDCauTraLoi" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MSNV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="IDChuDe" Type="Int32" />
+          <Property Name="IDTemplate" Type="Int32" />
+          <NavigationProperty Name="CauTraLoi_ChiTiet" Relationship="Self.fk_CauTraLoi_ChiTiet_CauTraLoi" FromRole="CauTraLoi" ToRole="CauTraLoi_ChiTiet" />
+          <NavigationProperty Name="ChuDe" Relationship="Self.fk_CauTraLoi_ChuDe" FromRole="CauTraLoi" ToRole="ChuDe" />
+          <NavigationProperty Name="Template" Relationship="Self.fk_CauTraLoi_Template" FromRole="CauTraLoi" ToRole="Template" />
+        </EntityType>
+        <EntityType Name="CauTraLoi_ChiTiet">
+          <Key>
+            <PropertyRef Name="IDCauTraLoiChiTiet" />
+          </Key>
+          <Property Name="IDCauTraLoiChiTiet" Type="Int32" Nullable="false" />
+          <Property Name="IDCauTraLoi" Type="Int32" />
+          <Property Name="IDCauHoi" Type="Int32" />
+          <Property Name="CauTraLoi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CauHoi" Relationship="Self.fk_CauTraLoi_ChiTiet_CauHoi" FromRole="CauTraLoi_ChiTiet" ToRole="CauHoi" />
+          <NavigationProperty Name="CauTraLoi1" Relationship="Self.fk_CauTraLoi_ChiTiet_CauTraLoi" FromRole="CauTraLoi_ChiTiet" ToRole="CauTraLoi" />
+        </EntityType>
+        <EntityType Name="ChuDe">
+          <Key>
+            <PropertyRef Name="IDChuDe" />
+          </Key>
+          <Property Name="IDChuDe" Type="Int32" Nullable="false" />
+          <Property Name="TenChuDe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MoTa" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NgayTao" Type="DateTime" Precision="3" />
+          <Property Name="NguoiTao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgayUpdate" Type="DateTime" Precision="3" />
+          <Property Name="NguoiUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CauTraLois" Relationship="Self.fk_CauTraLoi_ChuDe" FromRole="ChuDe" ToRole="CauTraLoi" />
+          <NavigationProperty Name="Templates" Relationship="Self.fk_Template_ChuDe" FromRole="ChuDe" ToRole="Template" />
+        </EntityType>
+        <EntityType Name="LoaiCauHoi">
+          <Key>
+            <PropertyRef Name="IDLoaiCauHoi" />
+          </Key>
+          <Property Name="IDLoaiCauHoi" Type="Int32" Nullable="false" />
+          <Property Name="DangCauHoi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CauHois" Relationship="Self.fk_CauHoi_LoaiCauHoi" FromRole="LoaiCauHoi" ToRole="CauHoi" />
+        </EntityType>
+        <EntityType Name="Sub_CauHoi">
+          <Key>
+            <PropertyRef Name="IDSubCauHoi" />
+          </Key>
+          <Property Name="IDSubCauHoi" Type="Int32" Nullable="false" />
+          <Property Name="IDCauHoi" Type="Int32" />
+          <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CauHoi" Relationship="Self.fk_Sub_CauHoi_CauHoi" FromRole="Sub_CauHoi" ToRole="CauHoi" />
+        </EntityType>
+        <EntityType Name="Template">
+          <Key>
+            <PropertyRef Name="IDTemplate" />
+          </Key>
+          <Property Name="IDTemplate" Type="Int32" Nullable="false" />
+          <Property Name="IDChuDe" Type="Int32" />
+          <Property Name="TenTemplate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MoTa" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NgayTao" Type="DateTime" Precision="3" />
+          <Property Name="NguoiTao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgayUpdate" Type="DateTime" Precision="3" />
+          <Property Name="NguoiUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CauHois" Relationship="Self.fk_CauHoi_Template" FromRole="Template" ToRole="CauHoi" />
+          <NavigationProperty Name="CauTraLois" Relationship="Self.fk_CauTraLoi_Template" FromRole="Template" ToRole="CauTraLoi" />
+          <NavigationProperty Name="ChuDe" Relationship="Self.fk_Template_ChuDe" FromRole="Template" ToRole="ChuDe" />
+          <Property Name="HienThi" Type="Int32" />
+          <Property Name="TinhDiem" Type="Boolean" />
+          <Property Name="Random" Type="Boolean" />
+          <Property Name="CauHoiEnable" Type="Boolean" />
+        </EntityType>
+        <Association Name="fk_CauHoi_LoaiCauHoi">
+          <End Role="LoaiCauHoi" Type="Self.LoaiCauHoi" Multiplicity="0..1" />
+          <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LoaiCauHoi">
+              <PropertyRef Name="IDLoaiCauHoi" />
+            </Principal>
+            <Dependent Role="CauHoi">
+              <PropertyRef Name="IDLoaiCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CauHoi_Template">
+          <End Role="Template" Type="Self.Template" Multiplicity="0..1" />
+          <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Template">
+              <PropertyRef Name="IDTemplate" />
+            </Principal>
+            <Dependent Role="CauHoi">
+              <PropertyRef Name="IDTemplate" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CauTraLoi_ChiTiet_CauHoi">
+          <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="0..1" />
+          <End Role="CauTraLoi_ChiTiet" Type="Self.CauTraLoi_ChiTiet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CauHoi">
+              <PropertyRef Name="IDCauHoi" />
+            </Principal>
+            <Dependent Role="CauTraLoi_ChiTiet">
+              <PropertyRef Name="IDCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Sub_CauHoi_CauHoi">
+          <End Role="CauHoi" Type="Self.CauHoi" Multiplicity="0..1" />
+          <End Role="Sub_CauHoi" Type="Self.Sub_CauHoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CauHoi">
+              <PropertyRef Name="IDCauHoi" />
+            </Principal>
+            <Dependent Role="Sub_CauHoi">
+              <PropertyRef Name="IDCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CauTraLoi_ChiTiet_CauTraLoi">
+          <End Role="CauTraLoi" Type="Self.CauTraLoi" Multiplicity="0..1" />
+          <End Role="CauTraLoi_ChiTiet" Type="Self.CauTraLoi_ChiTiet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CauTraLoi">
+              <PropertyRef Name="IDCauTraLoi" />
+            </Principal>
+            <Dependent Role="CauTraLoi_ChiTiet">
+              <PropertyRef Name="IDCauTraLoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CauTraLoi_ChuDe">
+          <End Role="ChuDe" Type="Self.ChuDe" Multiplicity="0..1" />
+          <End Role="CauTraLoi" Type="Self.CauTraLoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ChuDe">
+              <PropertyRef Name="IDChuDe" />
+            </Principal>
+            <Dependent Role="CauTraLoi">
+              <PropertyRef Name="IDChuDe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CauTraLoi_Template">
+          <End Role="Template" Type="Self.Template" Multiplicity="0..1" />
+          <End Role="CauTraLoi" Type="Self.CauTraLoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Template">
+              <PropertyRef Name="IDTemplate" />
+            </Principal>
+            <Dependent Role="CauTraLoi">
+              <PropertyRef Name="IDTemplate" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Template_ChuDe">
+          <End Role="ChuDe" Type="Self.ChuDe" Multiplicity="0..1" />
+          <End Role="Template" Type="Self.Template" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ChuDe">
+              <PropertyRef Name="IDChuDe" />
+            </Principal>
+            <Dependent Role="Template">
+              <PropertyRef Name="IDChuDe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="KhaiBaoYTeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CauHois" EntityType="Self.CauHoi" />
+          <EntitySet Name="CauTraLois" EntityType="Self.CauTraLoi" />
+          <EntitySet Name="CauTraLoi_ChiTiet" EntityType="Self.CauTraLoi_ChiTiet" />
+          <EntitySet Name="ChuDes" EntityType="Self.ChuDe" />
+          <EntitySet Name="LoaiCauHois" EntityType="Self.LoaiCauHoi" />
+          <EntitySet Name="Sub_CauHoi" EntityType="Self.Sub_CauHoi" />
+          <EntitySet Name="Templates" EntityType="Self.Template" />
+          <AssociationSet Name="fk_CauHoi_LoaiCauHoi" Association="Self.fk_CauHoi_LoaiCauHoi">
+            <End Role="LoaiCauHoi" EntitySet="LoaiCauHois" />
+            <End Role="CauHoi" EntitySet="CauHois" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CauHoi_Template" Association="Self.fk_CauHoi_Template">
+            <End Role="Template" EntitySet="Templates" />
+            <End Role="CauHoi" EntitySet="CauHois" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CauTraLoi_ChiTiet_CauHoi" Association="Self.fk_CauTraLoi_ChiTiet_CauHoi">
+            <End Role="CauHoi" EntitySet="CauHois" />
+            <End Role="CauTraLoi_ChiTiet" EntitySet="CauTraLoi_ChiTiet" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Sub_CauHoi_CauHoi" Association="Self.fk_Sub_CauHoi_CauHoi">
+            <End Role="CauHoi" EntitySet="CauHois" />
+            <End Role="Sub_CauHoi" EntitySet="Sub_CauHoi" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CauTraLoi_ChiTiet_CauTraLoi" Association="Self.fk_CauTraLoi_ChiTiet_CauTraLoi">
+            <End Role="CauTraLoi" EntitySet="CauTraLois" />
+            <End Role="CauTraLoi_ChiTiet" EntitySet="CauTraLoi_ChiTiet" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CauTraLoi_ChuDe" Association="Self.fk_CauTraLoi_ChuDe">
+            <End Role="ChuDe" EntitySet="ChuDes" />
+            <End Role="CauTraLoi" EntitySet="CauTraLois" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CauTraLoi_Template" Association="Self.fk_CauTraLoi_Template">
+            <End Role="Template" EntitySet="Templates" />
+            <End Role="CauTraLoi" EntitySet="CauTraLois" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Template_ChuDe" Association="Self.fk_Template_ChuDe">
+            <End Role="ChuDe" EntitySet="ChuDes" />
+            <End Role="Template" EntitySet="Templates" />
+          </AssociationSet>
+          <EntitySet Name="CauTraLoiDungs" EntityType="KhaiBaoYTeModel.CauTraLoiDung" />
+        </EntityContainer>
+        <EntityType Name="CauTraLoiDung">
+          <Key>
+            <PropertyRef Name="ID_CTL_Dung" />
+          </Key>
+          <Property Name="ID_CTL_Dung" Type="Int32" Nullable="false" />
+          <Property Name="IDCauHoi" Type="Int32" />
+          <Property Name="CauTraLoi_Dung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KhaiBaoYTeModelStoreContainer" CdmEntityContainer="KhaiBaoYTeEntities">
+          <EntitySetMapping Name="CauHois">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.CauHoi">
+              <MappingFragment StoreEntitySet="CauHoi">
+                <ScalarProperty Name="CauHoiEnable" ColumnName="CauHoiEnable" />
+                <ScalarProperty Name="SoDiem" ColumnName="SoDiem" />
+                <ScalarProperty Name="IDCauHoi" ColumnName="IDCauHoi" />
+                <ScalarProperty Name="IDTemplate" ColumnName="IDTemplate" />
+                <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+                <ScalarProperty Name="IDLoaiCauHoi" ColumnName="IDLoaiCauHoi" />
+                <ScalarProperty Name="CauHoiRequired" ColumnName="CauHoiRequired" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayUpdate" ColumnName="NgayUpdate" />
+                <ScalarProperty Name="NguoiUpdate" ColumnName="NguoiUpdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CauTraLois">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.CauTraLoi">
+              <MappingFragment StoreEntitySet="CauTraLoi">
+                <ScalarProperty Name="IDCauTraLoi" ColumnName="IDCauTraLoi" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="MSNV" ColumnName="MSNV" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="IDChuDe" ColumnName="IDChuDe" />
+                <ScalarProperty Name="IDTemplate" ColumnName="IDTemplate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CauTraLoi_ChiTiet">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.CauTraLoi_ChiTiet">
+              <MappingFragment StoreEntitySet="CauTraLoi_ChiTiet">
+                <ScalarProperty Name="IDCauTraLoiChiTiet" ColumnName="IDCauTraLoiChiTiet" />
+                <ScalarProperty Name="IDCauTraLoi" ColumnName="IDCauTraLoi" />
+                <ScalarProperty Name="IDCauHoi" ColumnName="IDCauHoi" />
+                <ScalarProperty Name="CauTraLoi" ColumnName="CauTraLoi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChuDes">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.ChuDe">
+              <MappingFragment StoreEntitySet="ChuDe">
+                <ScalarProperty Name="IDChuDe" ColumnName="IDChuDe" />
+                <ScalarProperty Name="TenChuDe" ColumnName="TenChuDe" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayUpdate" ColumnName="NgayUpdate" />
+                <ScalarProperty Name="NguoiUpdate" ColumnName="NguoiUpdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LoaiCauHois">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.LoaiCauHoi">
+              <MappingFragment StoreEntitySet="LoaiCauHoi">
+                <ScalarProperty Name="IDLoaiCauHoi" ColumnName="IDLoaiCauHoi" />
+                <ScalarProperty Name="DangCauHoi" ColumnName="DangCauHoi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sub_CauHoi">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.Sub_CauHoi">
+              <MappingFragment StoreEntitySet="Sub_CauHoi">
+                <ScalarProperty Name="IDSubCauHoi" ColumnName="IDSubCauHoi" />
+                <ScalarProperty Name="IDCauHoi" ColumnName="IDCauHoi" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Templates">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.Template">
+              <MappingFragment StoreEntitySet="Template">
+                <ScalarProperty Name="CauHoiEnable" ColumnName="CauHoiEnable" />
+                <ScalarProperty Name="Random" ColumnName="Random" />
+                <ScalarProperty Name="TinhDiem" ColumnName="TinhDiem" />
+                <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+                <ScalarProperty Name="IDTemplate" ColumnName="IDTemplate" />
+                <ScalarProperty Name="IDChuDe" ColumnName="IDChuDe" />
+                <ScalarProperty Name="TenTemplate" ColumnName="TenTemplate" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayUpdate" ColumnName="NgayUpdate" />
+                <ScalarProperty Name="NguoiUpdate" ColumnName="NguoiUpdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CauTraLoiDungs">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.CauTraLoiDung">
+              <MappingFragment StoreEntitySet="CauTraLoiDung">
+                <ScalarProperty Name="CauTraLoi_Dung" ColumnName="CauTraLoi_Dung" />
+                <ScalarProperty Name="IDCauHoi" ColumnName="IDCauHoi" />
+                <ScalarProperty Name="ID_CTL_Dung" ColumnName="ID_CTL_Dung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

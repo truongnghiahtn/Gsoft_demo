@@ -1,0 +1,82 @@
+﻿@model KhaiBaoYTe.Models.CauHoi
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CauHoi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TieuDe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TieuDe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CauHoiRequired)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CauHoiRequired)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayTao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayTao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NguoiTao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NguoiTao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayUpdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayUpdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NguoiUpdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NguoiUpdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoaiCauHoi.DangCauHoi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoaiCauHoi.DangCauHoi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Template.TenTemplate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Template.TenTemplate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDCauHoi }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

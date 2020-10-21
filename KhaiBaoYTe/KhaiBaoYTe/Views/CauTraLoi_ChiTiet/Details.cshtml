@@ -1,0 +1,43 @@
+﻿@model KhaiBaoYTe.Models.CauTraLoi_ChiTiet
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CauTraLoi_ChiTiet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CauTraLoi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CauTraLoi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CauHoi.TieuDe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CauHoi.TieuDe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CauTraLoi1.HoTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CauTraLoi1.HoTen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDCauTraLoiChiTiet }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

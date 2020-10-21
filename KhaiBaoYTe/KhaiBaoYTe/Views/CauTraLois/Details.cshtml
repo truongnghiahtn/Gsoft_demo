@@ -1,0 +1,59 @@
+﻿@model KhaiBaoYTe.Models.CauTraLoi
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <h2>Details</h2>
+    <h4>User</h4>
+</div>
+<hr />
+<div class="row justify-content-md-around">
+    <div class="col-md-7">
+        <dl class="row">
+            <dt class="col-6">
+                User ID
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.UserID)
+            </dd>
+            <dt class="col-6">
+                Họ tên
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.HoTen)
+            </dd>
+            <dt class="col-6">
+                MSNV
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.MSNV)
+            </dd>
+            <dt class="col-6">
+                Email
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-6">
+                Tên chủ đề
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.ChuDe.TenChuDe)
+            </dd>
+            <dt class="col-6">
+                Tên template
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.Template.TenTemplate)
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="text-center mt-md-4">
+    <a href="@Url.Action("Index", "CauTraLois")" class="btn btn-default">
+        Back to User
+    </a>
+</div>

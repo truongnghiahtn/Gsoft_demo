@@ -1,0 +1,96 @@
+﻿@model IEnumerable<KhaiBaoYTe.Models.CauTraLoi>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="label_page">User</h2>
+
+<div class="d-flex flex-row">
+    <div class="mr-auto">
+        Số người đã trả lời : @TempData["CountUser"]
+    </div>
+    <div class="ml-auto">
+        <a href="@Url.Action("Create", "CauTraLois", new { stringId = Request.QueryString["stringId"] })" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Create new">
+            <i class="fas fa-plus"></i>
+        </a>
+    </div>
+</div>
+
+<table class="table table-hover data_table shadow_card_user" style="background-color: #eaeaea; ">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                Họ tên
+            </th>
+            <th>
+                MSNV
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Chủ đề
+            </th>
+            <th>
+                Template
+            </th>
+            <th>
+
+            </th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoTen)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MSNV)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChuDe.TenChuDe)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Template.TenTemplate)
+                </td>
+                <td>
+                    <a href="@Url.Action("Index", "CauTraLoiChiTiet", new { stringId = item.IDCauTraLoi })" class="btn btn-secondary btn-sm">
+                        Các câu đã trả lời
+                    </a>
+                </td>
+                <td>
+                    <div class="container">
+                        <div class="row flex-nowrap justify-content-center">
+                            <div class="col-sm d-flex justify-content-center">
+                                <a href="@Url.Action("Edit", "CauTraLois", new { id = item.IDCauTraLoi, stringId = Request.QueryString["stringId"] })"
+                                   class="btn btn-success btn-sm rounded-0" data-toggle="tooltip" data-placement="top" title="Edit">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                            </div>
+                            <div class="col-sm d-flex justify-content-center">
+                                <a href="@Url.Action("Details", "CauTraLois", new { id = item.IDCauTraLoi, stringId = Request.QueryString["stringId"] })"
+                                   class="btn btn-info btn-sm rounded-0" data-toggle="tooltip" data-placement="top" title="Details">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                            <div class="col-sm d-flex justify-content-center">
+                                <a href="@Url.Action("Delete", "CauTraLois", new { id = item.IDCauTraLoi, stringId = Request.QueryString["stringId"] })"
+                                   class="btn btn-danger btn-sm rounded-0" data-toggle="tooltip" data-placement="top" title="Delete">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

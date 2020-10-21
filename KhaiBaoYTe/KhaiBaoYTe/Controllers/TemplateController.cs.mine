@@ -1,0 +1,190 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Linq;
+using System.Net;
+using System.Web;
+using System.Web.Mvc;
+using KhaiBaoYTe.Models;
+
+namespace KhaiBaoYTe.Controllers
+{
+    public class TemplateController : Controller
+    {
+        private KhaiBaoYTeEntities db = new KhaiBaoYTeEntities();
+
+        // GET: Template
+        
+        public ActionResult Index(int? tableid)
+        {
+            var templates = db.Templates.Include(t => t.ChuDe);
+            if (tableid != null)
+            {
+                //templates = db.Templates.Where(x => x.IDChuDe == tableid).Select(b => b);
+                TempData["TenChuDe"] = db.ChuDes.Where(i => i.IDChuDe == tableid).Single().TenChuDe;
+                TempData["IdChuDe"] = tableid;
+                var TraLoiAll = from ch in db.CauHois
+                                join t in db.Templates on ch.IDTemplate equals t.IDTemplate
+                                join ct in db.CauTraLoi_ChiTiet on ch.IDCauHoi equals ct.IDCauHoi group ch by t.IDTemplate into gr select gr;
+
+                var templateVM = from t in db.Templates
+                                 join ch in db.CauHois on t.IDTemplate equals ch.IDTemplate into gj
+                                 from lj in gj.DefaultIfEmpty()
+                                 where t.IDChuDe == tableid
+                                 group lj by new { t.IDTemplate, t.IDChuDe, t.TenTemplate, t.MoTa, t.NgayTao, t.NguoiTao, t.NgayUpdate, t.NguoiUpdate }
+                                 into gr
+                                 let idCauHoi = gr.FirstOrDefault().IDCauHoi
+                                 select new TemplateVM()
+                                 {
+                                     IDTemplate = gr.Key.IDTemplate,
+                                     IDChuDe = gr.Key.IDChuDe,
+                                     TenTemplate = gr.Key.TenTemplate,
+                                     MoTa = gr.Key.MoTa,
+                                     NgayTao = gr.Key.NgayTao,
+                                     NguoiTao = gr.Key.NguoiTao,
+                                     NgayUpdate = gr.Key.NgayUpdate,
+                                     NguoiUpdate = gr.Key.NguoiUpdate,
+                                     SoLgCauHoi = db.CauHois.Where(x => x.IDTemplate == gr.Key.IDTemplate).Count(),
+                                     SoLgCauTraLoi = TraLoiAll.SelectMany(x => x).Where(x => x.IDTemplate == gr.Key.IDTemplate).Count()
+                                 };
+                return View(templateVM.ToList());
+
+            }
+            return View(templates.ToList());
+            
+        }
+
+        
+
+        // GET: Template/Details/5
+        public ActionResult Details(int tableid, int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Template template = db.Templates.Find(id);
+            if (template == null)
+            {
+                return HttpNotFound();
+            }
+            return View(template);
+        }
+
+        // GET: Template/Create
+        public ActionResult Create(int tableid)
+        {
+            ViewBag.IDChuDe = new SelectList(db.ChuDes, "IDChuDe", "TenChuDe", tableid);
+            return View();
+        }
+
+        // POST: Template/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "IDTemplate,IDChuDe,TenTemplate,MoTa")] Template template)
+        {
+            if (ModelState.IsValid)
+            {
+                template.IDTemplate = CreateIDTemplate();
+                template.NgayTao = DateTime.Now;
+                template.NgayUpdate = DateTime.Now;
+
+                db.Templates.Add(template);
+                db.SaveChanges();
+                return RedirectToAction("Index", new {tableid = TempData["IdChuDe"] });
+            }
+
+            ViewBag.IDChuDe = new SelectList(db.ChuDes, "IDChuDe", "TenChuDe", template.IDChuDe);
+            return View(template);
+        }
+
+        // GET: Template/Edit/5
+        public ActionResult Edit(int tableid, int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Template template = db.Templates.Find(id);
+            if (template == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.IDChuDe = new SelectList(db.ChuDes, "IDChuDe", "TenChuDe", template.IDChuDe);
+            return View(template);
+        }
+
+        // POST: Template/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "IDTemplate,IDChuDe,TenTemplate,MoTa")] Template template)
+        {
+            if (ModelState.IsValid)
+            {
+                
+                template.NgayUpdate = DateTime.Now;
+
+                db.Entry(template).State = EntityState.Modified;
+                db.Entry(template).Property(x => x.NgayTao).IsModified = false;
+                db.SaveChanges();
+                return RedirectToAction("Index", new { tableid = TempData["IdChuDe"] });
+            }
+            ViewBag.IDChuDe = new SelectList(db.ChuDes, "IDChuDe", "TenChuDe", template.IDChuDe);
+            return View(template);
+        }
+
+        // GET: Template/Delete/5
+        public ActionResult Delete(int tableid, int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Template template = db.Templates.Find(id);
+            if (template == null)
+            {
+                return HttpNotFound();
+            }
+            return View(template);
+        }
+
+        // POST: Template/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Template template = db.Templates.Find(id);
+            db.Templates.Remove(template);
+            db.SaveChanges();
+            return RedirectToAction("Index", new { tableid = TempData["IdChuDe"]});
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private int CreateIDTemplate()
+        {
+            var query = db.Templates.OrderByDescending(x => x.IDChuDe).FirstOrDefault();
+            if (query == null)
+            {
+                return 1;
+            }
+            else
+            {
+                return query.IDTemplate + 1;
+            }
+
+        }
+    }
+}

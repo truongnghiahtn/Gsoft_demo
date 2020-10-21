@@ -1,0 +1,197 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Linq;
+using System.Net;
+using System.Web;
+using System.Web.Mvc;
+using KhaiBaoYTe.Models;
+using KhaiBaoYTe.ViewModel;
+
+namespace KhaiBaoYTe.Controllers
+{
+    public class CauHoiController : Controller
+    {
+        private KhaiBaoYTeEntities db = new KhaiBaoYTeEntities();
+
+        // GET: CauHoi
+        public ActionResult Index(string stringId)
+        {
+            var cauHois = from ch in db.CauHois select ch;
+
+            if (!String.IsNullOrEmpty(stringId))
+            {
+                int tableid = Int32.Parse(stringId);
+                cauHois = cauHois.Where(x => x.IDTemplate == tableid);
+                TempData["TenTemplate"] = db.Templates.Where(i => i.IDTemplate == tableid).Single().TenTemplate;
+                TempData["IdTemplate"] = tableid;
+                var idChuDe = db.Templates.Where(x => x.IDTemplate == tableid).Select(b => b.IDChuDe).First();
+                TempData["IdChuDe"] = idChuDe;
+            }
+                var TraLoiAll = from ch in cauHois
+                                 join ct in db.CauTraLoi_ChiTiet on ch.IDCauHoi equals ct.IDCauHoi
+                                 group ch by ch.IDCauHoi into gj
+                                 from gr in gj.DefaultIfEmpty()
+                                 select gr;
+
+                var cauHoiVM = from ch in cauHois
+                               select new CauHoiVM()
+                               {
+                                   IDCauHoi = ch.IDCauHoi,
+                                   IDTemplate = ch.IDTemplate,
+                                   TieuDe = ch.TieuDe,
+                                   DangCauHoi = ch.LoaiCauHoi.DangCauHoi,
+                                   CauHoiRequired = ch.CauHoiRequired,
+                                   NgayTao = ch.NgayTao,
+                                   NguoiTao = ch.NguoiTao,
+                                   NgayUpdate = ch.NgayUpdate,
+                                   NguoiUpdate = ch.NguoiUpdate,
+                                   SoLgTraLoi = TraLoiAll.Where(x => x.IDCauHoi == ch.IDCauHoi).Select(x => x.CauTraLoi_ChiTiet.FirstOrDefault().IDCauTraLoiChiTiet).Count(),
+                                   SoLgNoiDung = ch.Sub_CauHoi.Where(x => x.IDCauHoi == ch.IDCauHoi).Count()
+                               };            
+            return View(cauHoiVM.ToList());
+        }
+
+        // GET: CauHoi/Details/5
+        public ActionResult Details(int? id, string stringId)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CauHoi cauHoi = db.CauHois.Find(id);
+            if (cauHoi == null)
+            {
+                return HttpNotFound();
+            }
+            return View(cauHoi);
+        }
+
+        // GET: CauHoi/Create
+        public ActionResult Create(string stringId)
+        {
+            int? idTemplate = null;
+            if (!String.IsNullOrEmpty(stringId))
+            {
+                idTemplate = Int32.Parse(stringId);
+            }
+            ViewBag.IDLoaiCauHoi = new SelectList(db.LoaiCauHois, "IDLoaiCauHoi", "DangCauHoi");
+            ViewBag.IDTemplate = new SelectList(db.Templates, "IDTemplate", "TenTemplate", idTemplate);
+            return View();
+        }
+
+        // POST: CauHoi/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "IDCauHoi,IDTemplate,TieuDe,IDLoaiCauHoi,CauHoiRequired")] CauHoi cauHoi)
+        {
+            if (ModelState.IsValid)
+            {
+                
+
+                cauHoi.IDCauHoi = CreateIdCauHoi();
+                cauHoi.NgayTao = DateTime.Now;
+                cauHoi.NgayUpdate = DateTime.Now;
+
+                db.CauHois.Add(cauHoi);
+                db.SaveChanges();
+                return RedirectToAction("Index", new { stringId = TempData["IdTemplate"]});
+            }
+
+            ViewBag.IDLoaiCauHoi = new SelectList(db.LoaiCauHois, "IDLoaiCauHoi", "DangCauHoi", cauHoi.IDLoaiCauHoi);
+            ViewBag.IDTemplate = new SelectList(db.Templates, "IDTemplate", "TenTemplate", cauHoi.IDTemplate);
+            return View(cauHoi);
+        }
+
+        // GET: CauHoi/Edit/5
+        public ActionResult Edit(int? id, string stringId)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CauHoi cauHoi = db.CauHois.Find(id);
+            if (cauHoi == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.IDLoaiCauHoi = new SelectList(db.LoaiCauHois, "IDLoaiCauHoi", "DangCauHoi", cauHoi.IDLoaiCauHoi);
+            ViewBag.IDTemplate = new SelectList(db.Templates, "IDTemplate", "TenTemplate", cauHoi.IDTemplate);
+            
+            return View(cauHoi);
+        }
+
+        // POST: CauHoi/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "IDCauHoi,IDTemplate,TieuDe,IDLoaiCauHoi,CauHoiRequired")] CauHoi cauHoi)
+        {
+            if (ModelState.IsValid)
+            {
+                cauHoi.NgayUpdate = DateTime.Now;
+
+                db.Entry(cauHoi).State = EntityState.Modified;
+                db.Entry(cauHoi).Property(x => x.NgayTao).IsModified = false;
+                db.SaveChanges();
+                return RedirectToAction("Index", new { stringId = TempData["IdTemplate"] });
+            }
+            ViewBag.IDLoaiCauHoi = new SelectList(db.LoaiCauHois, "IDLoaiCauHoi", "DangCauHoi", cauHoi.IDLoaiCauHoi);
+            ViewBag.IDTemplate = new SelectList(db.Templates, "IDTemplate", "TenTemplate", cauHoi.IDTemplate);
+            return View(cauHoi);
+        }
+
+        // GET: CauHoi/Delete/5
+        public ActionResult Delete(int? id, string stringId)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CauHoi cauHoi = db.CauHois.Find(id);
+            if (cauHoi == null)
+            {
+                return HttpNotFound();
+            }
+            return View(cauHoi);
+        }
+
+        // POST: CauHoi/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            CauHoi cauHoi = db.CauHois.Find(id);
+            db.CauHois.Remove(cauHoi);
+            db.SaveChanges();
+            return RedirectToAction("Index", new { stringId = TempData["IdTemplate"] });
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private int CreateIdCauHoi()
+        {
+            var query = db.CauHois.OrderByDescending(x => x.IDCauHoi).FirstOrDefault();
+            if (query == null)
+            {
+                return 1;
+            }
+            else
+            {
+                return query.IDCauHoi + 1;
+            }
+
+        }
+    }
+}

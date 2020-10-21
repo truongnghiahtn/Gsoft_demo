@@ -1,0 +1,86 @@
+﻿@model IEnumerable<KhaiBaoYTe.ViewModel.TraLoiChiTietVM>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="label_page">Nội dung câu trả lời</h2>
+
+<div class="d-flex flex-row">
+    <div class="ml-auto">
+        <a href="@Url.Action("Create", "CauTraLoiChiTiet", new { stringId = Request.QueryString["stringId"] })" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Create new">
+            <i class="fas fa-plus"></i>
+        </a>
+    </div>
+</div>
+
+<table class="table table-hover data_table shadow_card_user" style="background-color: #eaeaea; ">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                Template
+            </th>
+            <th>
+                User
+            </th>
+            <th>
+                Tên câu hỏi
+            </th>
+            <th>
+                Câu trả lời
+            </th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.tenTemplate
+                    </td>
+                    <td>
+                        @item.tenNgTraLoi
+                    </td>
+                    <td>
+                        @item.tenCauHoi
+                    </td>
+                    <td>
+                        @item.CauTraLoi
+                    </td>
+                    <td>
+                        <div class="container">
+                            <div class="row flex-nowrap justify-content-center">
+                                <div class="col-sm d-flex justify-content-center">
+                                    <a href="@Url.Action("Edit", "CauTraLoiChiTiet", new { id = item.IDCauTraLoiChiTiet, stringId = Request.QueryString["stringId"] })"
+                                       class="btn btn-success btn-sm rounded-0" data-toggle="tooltip" data-placement="top" title="Edit">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </div>
+                                <div class="col-sm d-flex justify-content-center">
+                                    <a href="@Url.Action("Details", "CauTraLoiChiTiet", new { id = item.IDCauTraLoiChiTiet, stringId = Request.QueryString["stringId"] })"
+                                       class="btn btn-info btn-sm rounded-0" data-toggle="tooltip" data-placement="top" title="Details">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+                                </div>
+                                <div class="col-sm d-flex justify-content-center">
+                                    <a href="@Url.Action("Delete", "CauTraLoiChiTiet", new { id = item.IDCauTraLoiChiTiet, stringId = Request.QueryString["stringId"] })"
+                                       class="btn btn-danger btn-sm rounded-0" data-toggle="tooltip" data-placement="top" title="Delete">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<div>
+    <a href="@Url.Action("Index", "CauTraLois")" class="btn btn-default">
+        Back
+    </a>
+</div>

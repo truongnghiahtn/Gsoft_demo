@@ -1,0 +1,60 @@
+﻿@model KhaiBaoYTe.Models.ChuDe
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <h2>Details</h2>
+    <h4>ChuDe</h4>
+</div>
+<hr />
+
+<div class="row justify-content-md-around">
+    <div class="col-md-7">
+        <dl class="row">
+            <dt class="col-6">
+                Tên chủ đề
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.TenChuDe)
+            </dd>
+            <dt class="col-6">
+                Mô tả
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.MoTa)
+            </dd>
+            <dt class="col-6">
+                Ngày tạo
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.NgayTao)
+            </dd>
+            <dt class="col-6">
+                Người tạo
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.NguoiTao)
+            </dd>
+            <dt class="col-6">
+                Ngày update
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.NgayUpdate)
+            </dd>
+            <dt class="col-6">
+                Người update
+            </dt>
+            <dd class="col-6">
+                @Html.DisplayFor(model => model.NguoiUpdate)
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="text-center mt-md-4">
+    <a href="@Url.Action("Index", "ChuDe")" class="btn btn-default">
+        Back to Chủ đề
+    </a>
+</div>

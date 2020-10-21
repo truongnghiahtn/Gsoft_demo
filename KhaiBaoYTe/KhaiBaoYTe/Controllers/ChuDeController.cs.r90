@@ -1,0 +1,181 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Linq;
+using System.Net;
+using System.Web;
+using System.Web.Mvc;
+using KhaiBaoYTe.Models;
+using KhaiBaoYTe.ViewModel;
+
+namespace KhaiBaoYTe.Controllers
+{
+    public class ChuDeController : Controller
+    {
+        private KhaiBaoYTeEntities db = new KhaiBaoYTeEntities();
+
+        // GET: ChuDe
+        public ActionResult Index()
+        {
+            var cauHoiAll = from t in db.Templates
+                            join ch in db.CauHois on t.IDTemplate equals ch.IDTemplate group t by t.IDTemplate
+                            into gj
+                            from gr in gj.DefaultIfEmpty() select gr;
+
+            var traLoiAll = from t in db.Templates
+                            join ch in db.CauHois on t.IDTemplate equals ch.IDTemplate
+                            join ct in db.CauTraLoi_ChiTiet on ch.IDCauHoi equals ct.IDCauHoi
+                            group t by t.IDTemplate into gj
+                            from gr in gj.DefaultIfEmpty()
+                            select gr;
+
+            var chuDeVM = from cd in db.ChuDes
+                          join t in db.Templates on cd.IDChuDe equals t.IDChuDe into gj1
+                          from g1 in gj1.DefaultIfEmpty()
+                          join ch in db.CauHois on g1.IDTemplate equals ch.IDTemplate into gj2
+                          from gr in gj2.DefaultIfEmpty()
+                          group gr by new
+                          { cd.IDChuDe, cd.TenChuDe, cd.MoTa, cd.NgayTao, cd.NguoiTao, cd.NgayUpdate, cd.NguoiUpdate } into gr
+                          select new ChuDeVM()
+                          {
+                              IDChuDe = gr.Key.IDChuDe,
+                              TenChuDe = gr.Key.TenChuDe,
+                              MoTa = gr.Key.MoTa,
+                              NgayTao = gr.Key.NgayTao,
+                              NguoiTao = gr.Key.NguoiTao,
+                              NgayUpdate = gr.Key.NgayUpdate,
+                              NguoiUpdate = gr.Key.NguoiUpdate,
+                              SoLgCauHoi = cauHoiAll.Where(x => x.IDChuDe == gr.Key.IDChuDe).Count(),
+                              SoLgTraLoi = traLoiAll.Where(x => x.IDChuDe == gr.Key.IDChuDe).Count()
+                          };
+            return View(chuDeVM.ToList());
+            //return View(db.ChuDes.ToList());
+        }
+
+        // GET: ChuDe/Details/5
+        public ActionResult Details(int tableid, int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            ChuDe chuDe = db.ChuDes.Find(id);
+            if (chuDe == null)
+            {
+                return HttpNotFound();
+            }
+            return View(chuDe);
+        }
+
+        // GET: ChuDe/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: ChuDe/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "IDChuDe,TenChuDe,MoTa,NgayTao,NguoiTao,NgayUpdate,NguoiUpdate")] ChuDe chuDe)
+        {
+            if (ModelState.IsValid)
+            {
+                chuDe.IDChuDe = CreateIdChuDe();
+                chuDe.NgayTao = DateTime.Now;
+                chuDe.NgayUpdate = DateTime.Now;
+
+                db.ChuDes.Add(chuDe);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(chuDe);
+        }
+
+        // GET: ChuDe/Edit/5
+        public ActionResult Edit(int tableid, int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            ChuDe chuDe = db.ChuDes.Find(id);
+            if (chuDe == null)
+            {
+                return HttpNotFound();
+            }
+            return View(chuDe);
+        }
+
+        // POST: ChuDe/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "IDChuDe,TenChuDe,MoTa,NgayTao,NguoiTao,NgayUpdate,NguoiUpdate")] ChuDe chuDe)
+        {
+            if (ModelState.IsValid)
+            {
+                chuDe.NgayUpdate = DateTime.Now;
+
+                db.Entry(chuDe).State = EntityState.Modified;
+                db.Entry(chuDe).Property(x => x.NgayTao).IsModified = false;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(chuDe);
+        }
+
+        // GET: ChuDe/Delete/5
+        public ActionResult Delete(int tableid, int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            ChuDe chuDe = db.ChuDes.Find(id);
+            if (chuDe == null)
+            {
+                return HttpNotFound();
+            }
+            return View(chuDe);
+        }
+
+        // POST: ChuDe/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            ChuDe chuDe = db.ChuDes.Find(id);
+            db.ChuDes.Remove(chuDe);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private int CreateIdChuDe()
+        {
+            var query = db.ChuDes.OrderByDescending(x => x.IDChuDe).FirstOrDefault();
+            if(query == null)
+            {
+                return 1;
+            }
+            else
+            {
+                return query.IDChuDe + 1;
+            }
+           
+        }
+    }
+}

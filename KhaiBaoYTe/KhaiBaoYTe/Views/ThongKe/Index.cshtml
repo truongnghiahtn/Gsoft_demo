@@ -1,0 +1,400 @@
+﻿@model KhaiBaoYTe.ViewModel.ThongKeVM
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bundles/chart")
+
+<h1 class="label_page">Dashboard</h1>
+
+<!--Info boxes-->
+<div class="row">
+    <!--Info box-->
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="info-box">
+            <span class="info-box-icon bg-info">
+                <i class="fa fa-archive"></i>
+            </span>
+            <div class="info-box-content">
+                <span class="info-box-text">
+                    Tổng số chủ đề
+                </span>
+                <span class="info-box-number">
+                    @TempData["SoLgChuDe"]
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--Info box-->
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="info-box">
+            <span class="info-box-icon bg-danger">
+                <i class="fa fa-list"></i>
+            </span>
+            <div class="info-box-content">
+                <span class="info-box-text">
+                    Tổng số template
+                </span>
+                <span class="info-box-number">
+                    @TempData["SoLgTemplate"]
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--Info box-->
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="info-box">
+            <span class="info-box-icon bg-success">
+                <i class="fa fa-question-circle"></i>
+            </span>
+            <div class="info-box-content">
+                <span class="info-box-text">
+                    Tổng số câu hỏi
+                </span>
+                <span class="info-box-number">
+                    @TempData["SoLgCauHoi"]
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+
+<!--Bang filter cau tra loi-->
+<div class="bold row justify-content-center m-3 ">
+    @using (Html.BeginForm("Index", "ThongKe", FormMethod.Post))
+    {
+        <div class="col">
+            Theo chủ đề: @Html.DropDownList("IdChuDe", null, "")
+            Theo template : @Html.DropDownList("IdTemplate", null, "", htmlAttributes: new { @class = "drop_down" })
+            Câu hỏi : @Html.DropDownList("IdCauHoi", null, "", htmlAttributes: new { @class = "drop_down" })
+            <button type="submit" class="btn btn-info"><i class="fas fa-search"></i> Search</button>
+        </div>
+    }
+</div>
+
+
+
+<br />
+
+<table class="table table-hover data_table shadow_card_user" style="background-color: #eaeaea; ">
+    <thead>
+        <tr style="background-color: #a8c2ae;">
+            <th>
+                Tên câu hỏi
+            </th>
+            <th>Tổng số câu trả lời</th>
+        </tr>
+    </thead>
+    <tbody id="table_filter">
+        @{
+            foreach (var item in Model.bangTraLoi)
+            {
+                <tr>
+                    <td>@item.TieuDe</td>
+                    <td>@item.SoLg</td>
+                </tr>
+                }
+        }
+    </tbody>
+</table>
+
+<br />
+<br />
+<!--Liet ke ho ten, ma so, email-->
+<div id="tbl_User" class="container-fluid">
+
+    <div class="card-body">
+        @{
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card card-success shadow_card_user">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                Họ tên
+                            </h5>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body p-0" style="background-color: #eaeaea;">
+                            <ul class="products-list product-list-in-card pl-2 pr-2 scroll_bar">
+                                @{
+                                    foreach (var name in Model.listHoTen)
+                                    {
+                                        <li class="item">
+                                            <div class="product-info" style="white-space: nowrap;">
+                                                <span class="product-title">
+                                                    @name
+                                                </span>
+                                            </div>
+                                        </li>
+                                    }
+                                }
+                            </ul>
+
+                        </div>
+                        <div class="text-center">
+                            <div class="card-footer">
+                                <div class="description">
+                                    <span class="description-text">@Model.listHoTen.Count câu trả lời</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card card-success shadow_card_user">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                Email
+                            </h5>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body p-0" style="background-color: #eaeaea;">
+                            <ul class="products-list product-list-in-card pl-2 pr-2 scroll_bar">
+                                @{
+                                    foreach (var email in Model.listEmail)
+                                    {
+                                        <li class="item">
+                                            <div class="product-info">
+                                                <span class="product-title">
+                                                    @email
+                                                </span>
+                                            </div>
+                                        </li>
+                                    }
+                                }
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <div class="card-footer">
+                                <div class="description">
+                                    <span class="description-text">@Model.listHoTen.Count câu trả lời</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card card-success shadow_card_user">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                MSNV
+                            </h5>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body p-0" style="background-color: #eaeaea;">
+                            <ul class="products-list product-list-in-card pl-2 pr-2 scroll_bar">
+                                @{
+                                    foreach (var ms in Model.listMssv)
+                                    {
+                                        <li class="item">
+                                            <div class="product-info">
+                                                <span class="product-title">
+                                                    @ms
+                                                </span>
+                                            </div>
+                                        </li>
+                                    }
+                                }
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <div class="card-footer">
+                                <div class="description">
+                                    <span class="description-text">@Model.listHoTen.Count câu trả lời</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+
+
+</div>
+
+<br />
+
+<!--Liet ke cau tra loi textbox-->
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        @{
+            foreach (var item in Model.listThongKeTextBox)
+            {
+                <div class="col-md-6">
+                    <div class="card card-danger shadow_card_user ">
+                        <div class="card-header col-12 ">
+                            <span class="card-title col-10">
+                                @item.tenCauHoi
+                            </span>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 scroll_bar">
+                            <ul class="products-list product-list-in-card pl-2 pr-2">
+                                @{
+                                    foreach (var textbox in item.cauTraLoi)
+                                    {
+                                        <li class="item">
+                                            <div class="product-info">
+                                                <span class="product-title">
+                                                    @textbox
+                                                </span>
+                                            </div>
+                                        </li>
+                                    }
+                                }
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <div class="card-footer">
+                                <div class="description">
+                                    <span class="description-text">@item.cauTraLoi.Count câu trả lời</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<br />
+
+<!--Bieu do cau tra loi radio va checkbox-->
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        @{
+            foreach (var item in Model.listThongKeTraLoi)
+            {
+                <div class="col-md-6">
+                    <div class="card card-info shadow_card_user">
+                        <div class="card-header col-12">
+                            <h5 class="card-title col-10">
+                                @item.tenCauHoi
+                            </h5>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body " style="background-color: #eaeaea;">
+                            <div class="chart">
+                                <canvas id="myChart_@item.idCauHoi" style="min-height: 200px; height:200px; max-height:200px; width:150px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<!--scripts-->
+@section scripts{
+    <script type="text/javascript">
+        //lay idchude duoc chon
+        var c = document.getElementById("IdChuDe");
+        var IdChuDe = c.options[c.selectedIndex].value;
+
+        //lay idtemplate duoc chon
+        var t = document.getElementById("IdTemplate");
+        var IdTemplate = t.options[t.selectedIndex].value;
+
+        //lay idcauhoi duoc chon
+        var h = document.getElementById('IdCauHoi');
+        var IdCauHoi = h.options[h.selectedIndex].value;
+        console.log(IdCauHoi);
+
+
+
+        $.ajax({
+        url: "@Url.Action("GetTraLoiData", "ThongKe")",
+        type: "GET",
+            data: {
+                idChuDe: IdChuDe,
+                idTemplate: IdTemplate,
+                idCauHoi: IdCauHoi
+            },
+            success: function (chartData) {
+                console.log(chartData)
+
+                $.map(chartData, function (item) {
+                    let chartOption = $.map(item.noiDung, function (nd) {
+                        return nd.noiDung;
+                    })
+                    console.log(chartOption)
+                    let SoLg = $.map(item.noiDung, function (sl) {
+                        return sl.soLg;
+                    })
+                    console.log(SoLg)
+
+                    var chartCanvas = $("#myChart_" + item.idCauHoi).get(0).getContext('2d');
+                    console.log(chartCanvas);
+
+                    var dataChart = {
+                        labels: chartOption,
+                        datasets: [
+                            {
+                                data: SoLg,
+                                backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de',
+                                    '#82221B', '#8DCC8B', '#F3F37E', '#85445E', '#BDB58C']
+                            }
+                        ]
+                    }
+                    var chartOptions = {
+                        maintainAspectRatio: false,
+                        responsive: true,
+                        legend: {
+                            position: "right",
+                            align: "start",
+                            labels: {
+                                padding: 5,
+                                usePointStyle: true
+                            }
+                        }
+                    }
+                    if (item.idLoaiCauHoi == 3) {
+                        var pieChart = new Chart(chartCanvas, {
+                            type: 'pie',
+                            data: dataChart,
+                            options: chartOptions
+                        })
+                    }
+                    else {
+                        var barChart = new Chart(chartCanvas, {
+                            type: 'doughnut',
+                            data: dataChart,
+                            options: chartOptions
+                        })
+                    }
+                })
+        }
+        });
+    </script>
+}
+

@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="KhaiBaoYTeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CauHoi">
+          <Key>
+            <PropertyRef Name="IDCauHoi" />
+          </Key>
+          <Property Name="IDCauHoi" Type="int" Nullable="false" />
+          <Property Name="IDTemplate" Type="int" />
+          <Property Name="TieuDe" Type="nvarchar(max)" />
+          <Property Name="IDLoaiCauHoi" Type="int" />
+          <Property Name="CauHoiRequired" Type="bit" Nullable="false" />
+          <Property Name="NgayTao" Type="datetime" />
+          <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayUpdate" Type="datetime" />
+          <Property Name="NguoiUpdate" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CauTraLoi">
+          <Key>
+            <PropertyRef Name="IDCauTraLoi" />
+          </Key>
+          <Property Name="IDCauTraLoi" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+          <Property Name="MSNV" Type="varchar" MaxLength="10" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="IDChuDe" Type="int" />
+          <Property Name="IDTemplate" Type="int" />
+        </EntityType>
+        <EntityType Name="CauTraLoi_ChiTiet">
+          <Key>
+            <PropertyRef Name="IDCauTraLoiChiTiet" />
+          </Key>
+          <Property Name="IDCauTraLoiChiTiet" Type="int" Nullable="false" />
+          <Property Name="IDCauTraLoi" Type="int" />
+          <Property Name="IDCauHoi" Type="int" />
+          <Property Name="CauTraLoi" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ChuDe">
+          <Key>
+            <PropertyRef Name="IDChuDe" />
+          </Key>
+          <Property Name="IDChuDe" Type="int" Nullable="false" />
+          <Property Name="TenChuDe" Type="nvarchar" MaxLength="50" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="100" />
+          <Property Name="NgayTao" Type="datetime" />
+          <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayUpdate" Type="datetime" />
+          <Property Name="NguoiUpdate" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="LoaiCauHoi">
+          <Key>
+            <PropertyRef Name="IDLoaiCauHoi" />
+          </Key>
+          <Property Name="IDLoaiCauHoi" Type="int" Nullable="false" />
+          <Property Name="DangCauHoi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Sub_CauHoi">
+          <Key>
+            <PropertyRef Name="IDSubCauHoi" />
+          </Key>
+          <Property Name="IDSubCauHoi" Type="int" Nullable="false" />
+          <Property Name="IDCauHoi" Type="int" />
+          <Property Name="NoiDung" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Template">
+          <Key>
+            <PropertyRef Name="IDTemplate" />
+          </Key>
+          <Property Name="IDTemplate" Type="int" Nullable="false" />
+          <Property Name="IDChuDe" Type="int" />
+          <Property Name="TenTemplate" Type="nvarchar" MaxLength="50" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="100" />
+          <Property Name="NgayTao" Type="datetime" />
+          <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayUpdate" Type="datetime" />
+          <Property Name="NguoiUpdate" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="KhaiBaoYTeModelStoreContainer">
+          <EntitySet Name="CauHoi" EntityType="Self.CauHoi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CauTraLoi" EntityType="Self.CauTraLoi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CauTraLoi_ChiTiet" EntityType="Self.CauTraLoi_ChiTiet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ChuDe" EntityType="Self.ChuDe" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LoaiCauHoi" EntityType="Self.LoaiCauHoi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sub_CauHoi" EntityType="Self.Sub_CauHoi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Template" EntityType="Self.Template" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KhaiBaoYTeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CauHoi">
+          <Key>
+            <PropertyRef Name="IDCauHoi" />
+          </Key>
+          <Property Name="IDCauHoi" Type="Int32" Nullable="false" />
+          <Property Name="IDTemplate" Type="Int32" />
+          <Property Name="TieuDe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDLoaiCauHoi" Type="Int32" />
+          <Property Name="CauHoiRequired" Type="Boolean" Nullable="false" />
+          <Property Name="NgayTao" Type="DateTime" Precision="3" />
+          <Property Name="NguoiTao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgayUpdate" Type="DateTime" Precision="3" />
+          <Property Name="NguoiUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CauTraLoi">
+          <Key>
+            <PropertyRef Name="IDCauTraLoi" />
+          </Key>
+          <Property Name="IDCauTraLoi" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MSNV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="IDChuDe" Type="Int32" />
+          <Property Name="IDTemplate" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CauTraLoi_ChiTiet">
+          <Key>
+            <PropertyRef Name="IDCauTraLoiChiTiet" />
+          </Key>
+          <Property Name="IDCauTraLoiChiTiet" Type="Int32" Nullable="false" />
+          <Property Name="IDCauTraLoi" Type="Int32" />
+          <Property Name="IDCauHoi" Type="Int32" />
+          <Property Name="CauTraLoi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ChuDe">
+          <Key>
+            <PropertyRef Name="IDChuDe" />
+          </Key>
+          <Property Name="IDChuDe" Type="Int32" Nullable="false" />
+          <Property Name="TenChuDe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MoTa" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NgayTao" Type="DateTime" Precision="3" />
+          <Property Name="NguoiTao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgayUpdate" Type="DateTime" Precision="3" />
+          <Property Name="NguoiUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="LoaiCauHoi">
+          <Key>
+            <PropertyRef Name="IDLoaiCauHoi" />
+          </Key>
+          <Property Name="IDLoaiCauHoi" Type="Int32" Nullable="false" />
+          <Property Name="DangCauHoi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Sub_CauHoi">
+          <Key>
+            <PropertyRef Name="IDSubCauHoi" />
+          </Key>
+          <Property Name="IDSubCauHoi" Type="Int32" Nullable="false" />
+          <Property Name="IDCauHoi" Type="Int32" />
+          <Property Name="NoiDung" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Template">
+          <Key>
+            <PropertyRef Name="IDTemplate" />
+          </Key>
+          <Property Name="IDTemplate" Type="Int32" Nullable="false" />
+          <Property Name="IDChuDe" Type="Int32" />
+          <Property Name="TenTemplate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MoTa" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NgayTao" Type="DateTime" Precision="3" />
+          <Property Name="NguoiTao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgayUpdate" Type="DateTime" Precision="3" />
+          <Property Name="NguoiUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="KhaiBaoYTeEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CauHois" EntityType="Self.CauHoi" />
+          <EntitySet Name="CauTraLois" EntityType="Self.CauTraLoi" />
+          <EntitySet Name="CauTraLoi_ChiTiet" EntityType="Self.CauTraLoi_ChiTiet" />
+          <EntitySet Name="ChuDes" EntityType="Self.ChuDe" />
+          <EntitySet Name="LoaiCauHois" EntityType="Self.LoaiCauHoi" />
+          <EntitySet Name="Sub_CauHoi" EntityType="Self.Sub_CauHoi" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Templates" EntityType="Self.Template" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KhaiBaoYTeModelStoreContainer" CdmEntityContainer="KhaiBaoYTeEntities1">
+          <EntitySetMapping Name="CauHois">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.CauHoi">
+              <MappingFragment StoreEntitySet="CauHoi">
+                <ScalarProperty Name="IDCauHoi" ColumnName="IDCauHoi" />
+                <ScalarProperty Name="IDTemplate" ColumnName="IDTemplate" />
+                <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+                <ScalarProperty Name="IDLoaiCauHoi" ColumnName="IDLoaiCauHoi" />
+                <ScalarProperty Name="CauHoiRequired" ColumnName="CauHoiRequired" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayUpdate" ColumnName="NgayUpdate" />
+                <ScalarProperty Name="NguoiUpdate" ColumnName="NguoiUpdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CauTraLois">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.CauTraLoi">
+              <MappingFragment StoreEntitySet="CauTraLoi">
+                <ScalarProperty Name="IDCauTraLoi" ColumnName="IDCauTraLoi" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="MSNV" ColumnName="MSNV" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="IDChuDe" ColumnName="IDChuDe" />
+                <ScalarProperty Name="IDTemplate" ColumnName="IDTemplate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CauTraLoi_ChiTiet">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.CauTraLoi_ChiTiet">
+              <MappingFragment StoreEntitySet="CauTraLoi_ChiTiet">
+                <ScalarProperty Name="IDCauTraLoiChiTiet" ColumnName="IDCauTraLoiChiTiet" />
+                <ScalarProperty Name="IDCauTraLoi" ColumnName="IDCauTraLoi" />
+                <ScalarProperty Name="IDCauHoi" ColumnName="IDCauHoi" />
+                <ScalarProperty Name="CauTraLoi" ColumnName="CauTraLoi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChuDes">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.ChuDe">
+              <MappingFragment StoreEntitySet="ChuDe">
+                <ScalarProperty Name="IDChuDe" ColumnName="IDChuDe" />
+                <ScalarProperty Name="TenChuDe" ColumnName="TenChuDe" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayUpdate" ColumnName="NgayUpdate" />
+                <ScalarProperty Name="NguoiUpdate" ColumnName="NguoiUpdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LoaiCauHois">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.LoaiCauHoi">
+              <MappingFragment StoreEntitySet="LoaiCauHoi">
+                <ScalarProperty Name="IDLoaiCauHoi" ColumnName="IDLoaiCauHoi" />
+                <ScalarProperty Name="DangCauHoi" ColumnName="DangCauHoi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sub_CauHoi">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.Sub_CauHoi">
+              <MappingFragment StoreEntitySet="Sub_CauHoi">
+                <ScalarProperty Name="IDSubCauHoi" ColumnName="IDSubCauHoi" />
+                <ScalarProperty Name="IDCauHoi" ColumnName="IDCauHoi" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Templates">
+            <EntityTypeMapping TypeName="KhaiBaoYTeModel.Template">
+              <MappingFragment StoreEntitySet="Template">
+                <ScalarProperty Name="IDTemplate" ColumnName="IDTemplate" />
+                <ScalarProperty Name="IDChuDe" ColumnName="IDChuDe" />
+                <ScalarProperty Name="TenTemplate" ColumnName="TenTemplate" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+                <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
+                <ScalarProperty Name="NgayUpdate" ColumnName="NgayUpdate" />
+                <ScalarProperty Name="NguoiUpdate" ColumnName="NguoiUpdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

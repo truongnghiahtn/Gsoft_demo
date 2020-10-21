@@ -1,0 +1,30 @@
+using KhaiBaoYTe.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+
+namespace KhaiBaoYTe.Controllers
+{
+    public class ApiTemplate_radioController : ApiController
+    {
+        private KhaiBaoYTeEntities db = new KhaiBaoYTeEntities();
+        //GET /api/ApiTemplate_radio/id
+        public IQueryable<Object> GetTemplateRadioNo(int id)
+        {
+            var nd = from ct in db.CauTraLoi_ChiTiet
+                     join s in db.Sub_CauHoi on ct.IDCauHoi equals s.IDCauHoi
+                     where ct.CauHoi.IDLoaiCauHoi == 3 && ct.CauHoi.IDTemplate == id
+                     group ct by new { ct.IDCauHoi, s.NoiDung } into gr
+                     select new
+                     {
+                         idCH = gr.Key.IDCauHoi,
+                         NoiDung = gr.Key.NoiDung,
+                         SoLuong = gr.Where(c => c.CauTraLoi.Contains(gr.Key.NoiDung)).Count()
+                     };
+            return nd;
+        }
+    }
+}

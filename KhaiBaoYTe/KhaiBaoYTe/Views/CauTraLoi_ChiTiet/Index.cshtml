@@ -1,0 +1,47 @@
+﻿@model IEnumerable<KhaiBaoYTe.Models.CauTraLoi_ChiTiet>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Câu Trả Lời Chi Tiết</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.CauTraLoi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CauHoi.TieuDe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CauTraLoi1.HoTen)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CauTraLoi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CauHoi.TieuDe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CauTraLoi1.HoTen)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IDCauTraLoiChiTiet }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IDCauTraLoiChiTiet }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IDCauTraLoiChiTiet })
+        </td>
+    </tr>
+}
+
+</table>

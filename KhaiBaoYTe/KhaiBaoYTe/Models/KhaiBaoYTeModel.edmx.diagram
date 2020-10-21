@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3470e5bab0e740168e967a965454d247" Name="Diagram1">
+        <EntityTypeShape EntityType="KhaiBaoYTeModel.CauHoi" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KhaiBaoYTeModel.CauTraLoi" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="KhaiBaoYTeModel.CauTraLoi_ChiTiet" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KhaiBaoYTeModel.ChuDe" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="KhaiBaoYTeModel.LoaiCauHoi" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="KhaiBaoYTeModel.Sub_CauHoi" Width="1.5" PointX="7.5" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="KhaiBaoYTeModel.Template" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <AssociationConnector Association="KhaiBaoYTeModel.fk_CauHoi_LoaiCauHoi" ManuallyRouted="false" />
+        <AssociationConnector Association="KhaiBaoYTeModel.fk_CauHoi_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="KhaiBaoYTeModel.fk_CauTraLoi_ChiTiet_CauHoi" ManuallyRouted="false" />
+        <AssociationConnector Association="KhaiBaoYTeModel.fk_Sub_CauHoi_CauHoi" ManuallyRouted="false" />
+        <AssociationConnector Association="KhaiBaoYTeModel.fk_CauTraLoi_ChiTiet_CauTraLoi" ManuallyRouted="false" />
+        <AssociationConnector Association="KhaiBaoYTeModel.fk_CauTraLoi_ChuDe" ManuallyRouted="false" />
+        <AssociationConnector Association="KhaiBaoYTeModel.fk_CauTraLoi_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="KhaiBaoYTeModel.fk_Template_ChuDe" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="KhaiBaoYTeModel.CauTraLoiDung" Width="1.5" PointX="0.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

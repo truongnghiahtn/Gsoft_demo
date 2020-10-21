@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý câu hỏi - @ViewBag.Title</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class=" wrapper">
+        <nav class="main-header navbar navbar-expand ">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link btn-menu" data-widget="pushmenu" href="#" role="button">
+                        <i class="fas fa-bars" style="color: #464646"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>    
+        <!--Main sidebar container-->
+        <aside class="main-sidebar sidebar-dark-blue sidebar-color">
+            <!-- Brand Logo -->
+            <a href="@Url.Action("Index", "ChuDe")" class="brand-link" >
+                <img src="@Url.Content("~/adminlte/img/list.png")" class="brand-image "/>
+                <span class="brand-text font-weight-light">Quản lý câu hỏi</span>
+            </a>
+            <!--Sidebar-->
+            <div class="sidebar  sidebar-size">
+                <!--Sidebar-menu-->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item has-treeview">
+                            <a href="@Url.Action("Index", "ThongKe")" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "ChuDe")" class="nav-link">
+                                <i class="nav-icon fas fa-archive"></i>
+                                <p>
+                                    Chủ đề
+                                    @Html.Action("GetEntitiesCount", "EntitiesCount", new { entity = "ChuDe" })
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "Template")" class="nav-link">
+                                <i class="nav-icon fas fa-list-alt"></i>
+                                <p>
+                                    Templates
+                                    @Html.Action("GetEntitiesCount", "EntitiesCount", new { entity = "Template" })
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "CauHoi")" class="nav-link">
+                                <i class="nav-icon fas fa-question-circle"></i>
+                                <p>
+                                    Câu hỏi
+                                    @Html.Action("GetEntitiesCount", "EntitiesCount", new { entity = "CauHoi" })
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "CauTraLois")" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>User</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "CauTraLoiChiTiet")" class="nav-link">
+                                <i class="nav-icon fas fa-check-square"></i>
+                                <p>Câu trả lời</p>
+                            </a>
+                        </li>
+
+                        
+
+                    </ul>
+                </nav>
+               
+            </div>
+        </aside>
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="container-fluid body-content pt-md-3 body-render">
+                    @RenderBody()
+                    <footer>
+                        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/adminlte/js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle = "tooltip"]').tooltip();
+    });
+
+    $(function () {
+        $(".data_table").DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "info": false,
+            "ordering": true,
+            "autoWidth": false,
+            "responsive": true
+        });
+    });
+
+    $(function () {
+        var protocol = window.location.protocol;//lay https
+        var host = window.location.host;//lay localhost:xxx
+        var action = window.location.pathname.split('/');//tach url
+        var path = protocol + "//" + host + "/" + action[1];
+        console.log(path)
+        $('.nav-item a').each(function () {
+            if (this.href == path) {
+                $(this).addClass('active');
+            }
+        });
+    });
+</script>
+
+

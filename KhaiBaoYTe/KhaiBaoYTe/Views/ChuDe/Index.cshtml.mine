@@ -1,0 +1,88 @@
+﻿@model IEnumerable<KhaiBaoYTe.Models.ChuDe>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Chủ đề</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Tên chủ đề
+        </th>
+        <th>
+            Mô tả
+        </th>
+        <th>
+            Ngày tạo
+        </th>
+        <th>
+            Người tạo
+        </th>
+        <th>
+            Ngày cập nhật
+        </th>
+        <th>
+            Người cập nhật
+        </th>
+        <th>
+            Số câu hỏi
+        </th>
+        <th>
+            Số câu trả lời
+        </th>
+        <th></th>
+        <th></th>
+    </tr>
+
+@{
+    foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.TenChuDe
+            </td>
+            <td>
+                @item.MoTa
+            </td>
+            <td>
+                @item.NgayTao.Value.ToString("dd/MM/yyyy") 
+            </td>
+            <td>
+                @item.NguoiTao
+            </td>
+            <td>
+                @item.NgayUpdate.Value.ToString("dd/MM/yyyy") 
+            </td>
+            <td>
+                @item.NguoiUpdate
+            </td>
+            @*<td>
+                @item.SoLgCauHoi
+            </td>
+            <td>
+                @item.SoLgTraLoi
+            </td>*@
+            <td>
+                @Html.ActionLink("Templates", "Index", "Template", new { tableid = item.IDChuDe}, null)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { tableid = item.IDChuDe, id = item.IDChuDe }) |
+                @Html.ActionLink("Details", "Details", new { tableid = item.IDChuDe, id = item.IDChuDe }) |
+                @Html.ActionLink("Delete", "Delete", new { tableid = item.IDChuDe, id = item.IDChuDe })
+            </td>
+        </tr>
+    }
+}
+
+</table>
+<div>
+    <p>
+        Tổng số chủ đề : @Model.Count()
+    </p>
+</div>
